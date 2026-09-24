@@ -368,7 +368,7 @@ footer .wrap{border-top:1px solid var(--line);padding-top:20px;display:flex;flex
     </div>
     <div class="alert"><span class="stampmark">NOTICE</span><div><strong>お得な前売券は9月25日（金）23:59まで。</strong>9/24・25は業界日のため一般の方は入場できません。最終入場は閉場30分前、会場の当日券窓口は完全キャッシュレスです。</div></div>
     <div class="tickets" id="tickets-hero"></div>
-    <div class="sharebar"><a class="btn" id="share-x" href="https://twitter.com/intent/tweet" target="_blank" rel="noopener">Xでこのガイドをシェア</a><a class="btn ghost" id="tip" hidden target="_blank" rel="noopener">応援する（投げ銭）</a></div>
+    <div class="sharebar"><a class="btn" id="share-x" href="https://twitter.com/intent/tweet" target="_blank" rel="noopener">Xでこのガイドをシェア</a><a class="btn ghost" href="https://x.com/tejexpo2026" target="_blank" rel="noopener">最新情報（X）</a><a class="btn ghost" id="tip" hidden target="_blank" rel="noopener">応援する（投げ銭）</a></div>
   </div>
 </header>
 
@@ -1093,7 +1093,7 @@ const TICKETS = [
   document.getElementById("tickets-info").innerHTML=html;
   const t=document.getElementById("tip");if(SITE.tip){t.href=SITE.tip;t.hidden=false}
   const sx=document.getElementById("share-x");
-  sx.href="https://twitter.com/intent/tweet?text="+encodeURIComponent("ツーリズムEXPO 2026、82ブースの試食・プレゼント・体験と時刻イベントが1ページにまとまった非公式ガイド #ツーリズムEXPOジャパン")+"&url="+encodeURIComponent(location.href.split("#")[0]);
+  sx.href="https://twitter.com/intent/tweet?text="+encodeURIComponent("ツーリズムEXPO 2026、82ブースの試食・プレゼント・体験と時刻イベントが1ページにまとまった非公式ガイド #ツーリズムEXPOジャパン")+"&url="+encodeURIComponent(location.href.split("#")[0])+"&via=tejexpo2026";
 })();
 </script>
 </body>
