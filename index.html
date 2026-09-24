@@ -1,0 +1,1099 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ツーリズムEXPO 2026 体験ガイド（非公式）</title>
+<meta name="description" content="ツーリズムEXPOジャパン2026の一般公開日（9/26・27）に、82ブースの試食・プレゼント・体験と時刻イベントを一覧できる非公式ガイド。お気に入り登録で自分だけの予定表も。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ツーリズムEXPO 2026 体験ガイド（非公式）">
+<meta property="og:description" content="82ブースの試食・プレゼント・体験、ブース内イベント時刻表、ステージ、モデルコースを1ページに。">
+<meta property="og:url" content="https://tej-guide.github.io/tej2026/">
+<meta property="og:image" content="https://tej-guide.github.io/tej2026/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index,follow">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=JetBrains+Mono:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+:root{
+  --paper:#F1F4F1; --card:#FFFFFF; --ink:#15223A; --muted:#58657A; --line:#D5DCDD;
+  --accent:#0C6B7B; --accent-soft:#DCEEF0; --stamp:#C4412A; --stamp-soft:#F8E3DD; --gold:#D99A1E;
+  --chip:#E7ECEB; --shadow:0 1px 0 rgba(21,34,58,.06),0 8px 24px -14px rgba(21,34,58,.25);
+  --display:"Dela Gothic One","Hiragino Sans","Yu Gothic",sans-serif;
+  --body:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic","Meiryo",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;
+  --paper:#0E1625; --card:#162136; --ink:#E7ECF3; --muted:#9BA8BA; --line:#27354C;
+  --accent:#55B9C7; --accent-soft:#16384A; --stamp:#F0765A; --stamp-soft:#3A2220; --gold:#F0BC4E;
+  --chip:#1D2A41; --shadow:0 1px 0 rgba(0,0,0,.3),0 10px 26px -16px rgba(0,0,0,.7);
+}}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#0E1625; --card:#162136; --ink:#E7ECF3; --muted:#9BA8BA; --line:#27354C;
+  --accent:#55B9C7; --accent-soft:#16384A; --stamp:#F0765A; --stamp-soft:#3A2220; --gold:#F0BC4E;
+  --chip:#1D2A41; --shadow:0 1px 0 rgba(0,0,0,.3),0 10px 26px -16px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{text-wrap:balance;margin:0}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(24px,3.4vw,34px);line-height:1.25;letter-spacing:.01em}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--stamp);font-weight:700}
+.lede{color:var(--muted);max-width:62ch;margin:.5em 0 0}
+section{padding-block:56px 8px}
+.sec-head{display:flex;flex-direction:column;gap:6px;margin-bottom:24px}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:18px;height:54px}
+.brand{font-family:var(--display);font-size:15px;white-space:nowrap;text-decoration:none;color:var(--ink)}
+.brand b{color:var(--stamp);font-weight:400}
+.nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0;overflow-x:auto;scrollbar-width:none}
+.nav ul::-webkit-scrollbar{display:none}
+.nav a.l{display:block;padding:6px 10px;border-radius:6px;text-decoration:none;color:var(--muted);font-size:13.5px;white-space:nowrap;font-weight:500}
+.nav a.l:hover{background:var(--chip);color:var(--ink)}
+
+/* hero: boarding pass */
+.hero{padding-block:36px 8px}
+.pass{display:grid;grid-template-columns:1fr 260px;background:var(--card);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;position:relative}
+.pass-main{padding:28px 30px 26px;display:flex;flex-direction:column;gap:18px}
+.pass-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.airline{font-family:var(--mono);font-size:12px;letter-spacing:.16em;color:var(--muted);font-weight:700}
+.theme-tag{font-size:12.5px;background:var(--accent-soft);color:var(--accent);padding:3px 10px;border-radius:99px;font-weight:700}
+.route{display:grid;grid-template-columns:auto 1fr auto;align-items:end;gap:16px}
+.route .code{font-family:var(--display);font-size:clamp(40px,7vw,72px);line-height:.95}
+.route .city{font-size:13px;color:var(--muted);margin-top:4px}
+.route .path{position:relative;height:2px;background:repeating-linear-gradient(90deg,var(--line) 0 8px,transparent 8px 14px);margin-bottom:26px}
+.route .path svg{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:34px;height:34px;color:var(--stamp);background:var(--card);padding:0 4px}
+h1.title{font-family:var(--display);font-weight:400;font-size:clamp(26px,4.4vw,44px);line-height:1.2}
+h1.title small{display:block;font-family:var(--body);font-weight:500;font-size:15px;color:var(--muted);margin-top:8px;line-height:1.6}
+.fields{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;border-top:1px dashed var(--line);padding-top:16px}
+.field .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
+.field .v{font-weight:700;font-size:15px;line-height:1.45;font-variant-numeric:tabular-nums}
+.pass-stub{border-left:2px dashed var(--line);padding:26px 22px;display:flex;flex-direction:column;gap:14px;background:linear-gradient(180deg,var(--accent-soft),transparent 70%);position:relative}
+.pass-stub::before,.pass-stub::after{content:"";position:absolute;left:-13px;width:24px;height:24px;border-radius:50%;background:var(--paper)}
+.pass-stub::before{top:-12px}.pass-stub::after{bottom:-12px}
+.stat .n{font-family:var(--display);font-size:30px;line-height:1.1;font-variant-numeric:tabular-nums}
+.stat .t{font-size:12.5px;color:var(--muted)}
+.barcode{height:44px;margin-top:auto;background:repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 4px,var(--ink) 4px 5px,transparent 5px 9px,var(--ink) 9px 12px,transparent 12px 14px);opacity:.75;border-radius:2px}
+.alert{margin-top:16px;display:flex;gap:12px;align-items:flex-start;background:var(--stamp-soft);border-radius:12px;padding:12px 16px;font-size:14px}
+.alert strong{color:var(--stamp)}
+.stampmark{flex:none;font-family:var(--mono);font-weight:700;font-size:11px;color:var(--stamp);border:2px solid var(--stamp);border-radius:6px;padding:2px 6px;transform:rotate(-4deg);letter-spacing:.08em;margin-top:2px}
+
+/* filters */
+.filters{display:flex;flex-direction:column;gap:12px;margin-bottom:22px;background:var(--card);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
+.frow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.frow .lab{font-size:12px;color:var(--muted);font-weight:700;min-width:64px}
+.chip{border:1px solid var(--line);background:var(--chip);color:var(--ink);font:inherit;font-size:13px;padding:5px 12px;border-radius:99px;cursor:pointer;font-weight:500;line-height:1.5}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.search{flex:1;min-width:0;display:flex}
+.search input{width:100%;font:inherit;font-size:14px;padding:8px 12px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink)}
+.count{font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
+.card{background:var(--card);border-radius:16px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+.art{position:relative;aspect-ratio:2/1;max-width:100%;overflow:hidden}
+.art svg{display:block;width:100%;height:100%}
+.gate{position:absolute;left:12px;top:12px;background:rgba(12,20,34,.82);color:#fff;border-radius:8px;padding:4px 10px 5px;line-height:1.1}
+.gate .k{display:block;font-family:var(--mono);font-size:9px;letter-spacing:.18em;opacity:.75}
+.gate .v{font-family:var(--mono);font-weight:700;font-size:17px}
+.new{position:absolute;left:12px;top:58px;background:var(--gold);color:#1a1405;font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:99px}
+.imgnote{position:absolute;right:10px;bottom:8px;font-size:10.5px;color:rgba(255,255,255,.85);text-shadow:0 1px 2px rgba(0,0,0,.4)}
+.cbody{padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px;flex:1}
+.region{font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.04em}
+.card h3{font-size:18px;line-height:1.45;font-weight:700}
+.catch{font-size:14px;color:var(--muted);margin:0}
+.exp{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:4px;font-size:14px}
+.exp li{padding-left:18px;position:relative;line-height:1.6}
+.exp li::before{content:"";position:absolute;left:3px;top:.62em;width:7px;height:7px;border-radius:2px;background:var(--stamp);transform:rotate(45deg)}
+.meta{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:auto;padding-top:12px;border-top:1px dashed var(--line)}
+.meta .k{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--muted)}
+.meta .v{font-size:13.5px;font-weight:700;line-height:1.45}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:11.5px;padding:2px 8px;border-radius:6px;background:var(--chip);color:var(--muted);font-weight:500}
+.tag.kid{background:var(--accent-soft);color:var(--accent)}
+.when{font-size:13px;background:var(--stamp-soft);border-radius:8px;padding:7px 10px;line-height:1.55}
+.when b{color:var(--stamp)}
+.olink{font-size:13px;font-weight:700;text-decoration:none;align-self:flex-start}
+.olink:hover{text-decoration:underline}
+.empty{padding:40px;text-align:center;color:var(--muted);background:var(--card);border-radius:14px}
+
+/* jump highlight */
+@keyframes flash{0%,100%{box-shadow:var(--shadow)}30%,70%{box-shadow:0 0 0 4px var(--gold),var(--shadow)}}
+.flash{animation:flash 1.6s ease 2}
+@media (prefers-reduced-motion:reduce){.flash{animation:none;outline:4px solid var(--gold)}}
+.favlist a.go{color:var(--ink);text-decoration:none}
+.favlist a.go:hover b,.favlist a.go:focus-visible b{text-decoration:underline;color:var(--accent)}
+.favlist a.go b::after{content:" →";color:var(--accent);font-weight:700}
+/* news */
+.news{list-style:none;margin:0;padding:0}
+.news li{display:grid;grid-template-columns:86px 1fr;gap:12px;padding:12px 0;border-top:1px dashed var(--line);font-size:14px;line-height:1.6}
+.news li:first-child{border-top:0}
+.news .g{font-family:var(--mono);font-weight:700;color:var(--accent);font-size:12.5px}
+.news b{display:block}
+@media (max-width:480px){.news li{grid-template-columns:1fr;gap:2px}}
+/* favorites */
+.fav{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;border:1.5px solid var(--line);background:var(--card);color:var(--muted);cursor:pointer;flex:none;padding:0}
+.fav svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round}
+.fav[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#3a2800}
+.fav[aria-pressed="true"] svg{fill:currentColor}
+.fav:hover{border-color:var(--gold);color:var(--gold)}
+.fav[aria-pressed="true"]:hover{color:#3a2800}
+.art .fav{position:absolute;right:12px;top:12px;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+.fav.sm{width:30px;height:30px}
+.fav.sm svg{width:15px;height:15px}
+.slot{grid-template-columns:62px 1fr 30px!important}
+.hr li{grid-template-columns:48px 66px 1fr 30px!important}
+.nav .cnt{display:inline-block;min-width:18px;padding:0 5px;margin-left:4px;border-radius:99px;background:var(--gold);color:#3a2800;font-size:11px;font-weight:700;text-align:center;line-height:18px;font-family:var(--mono)}
+.nav .cnt:empty{display:none}
+.favwrap{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.favlist{list-style:none;margin:0;padding:0}
+.favlist li{display:grid;grid-template-columns:66px 1fr 30px;gap:10px;align-items:start;padding:10px 0;border-top:1px solid var(--line);font-size:13.5px;line-height:1.55}
+.favlist li:first-child{border-top:0}
+.favlist .g{font-family:var(--mono);font-weight:700;color:var(--accent);font-size:12.5px;padding-top:2px}
+.favlist b{display:block;font-size:14px}
+.favlist small{display:block;color:var(--muted);font-size:12px}
+.favlist .auto{font-size:10.5px;background:var(--chip);color:var(--muted);border-radius:4px;padding:0 5px;margin-left:4px}
+.dayh{font-family:var(--display);font-weight:400;font-size:16px;margin:14px 0 2px}
+.dayh:first-child{margin-top:0}
+.favbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:14px}
+.btn{font:inherit;font-size:13px;font-weight:700;border-radius:10px;padding:7px 14px;cursor:pointer;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.warn{border-color:var(--stamp);background:var(--stamp);color:#fff}
+.favnote{font-size:12.5px;color:var(--muted)}
+.favempty{color:var(--muted);font-size:14px;margin:0}
+@media (max-width:820px){.favwrap{grid-template-columns:1fr}}
+@media (max-width:560px){.hr li{grid-template-columns:44px 1fr 30px!important}.hr .b{grid-column:2}.hr .w{grid-column:1/3}.hr li .fav{grid-column:3;grid-row:1}}
+
+/* card blocks */
+.blk{display:grid;grid-template-columns:52px 1fr;gap:8px;align-items:start}
+.blk .lb{font-size:11px;font-weight:700;border-radius:6px;padding:2px 0;text-align:center;letter-spacing:.04em;margin-top:3px}
+.blk.eat .lb{background:#F6E1C8;color:#8A4A12}
+.blk.gift .lb{background:var(--stamp-soft);color:var(--stamp)}
+.blk.do .lb{background:var(--accent-soft);color:var(--accent)}
+.blk.ev .lb{background:var(--chip);color:var(--ink)}
+:root[data-theme="dark"] .blk.eat .lb{background:#3B2A17;color:#F2B676}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .blk.eat .lb{background:#3B2A17;color:#F2B676}}
+.blk ul{margin:0;padding:0;list-style:none;font-size:13.5px;line-height:1.6}
+.blk li{padding:1px 0}
+.blk li small{color:var(--muted);font-size:12px}
+.src.xl{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:2px 4px;background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.src.pl{text-decoration:none}
+.src.pl:hover{background:var(--accent);color:var(--paper);border-color:var(--accent)}
+.src.xl:hover{background:var(--accent);border-color:var(--accent)}
+.src{font-size:10.5px;font-family:var(--mono);color:var(--accent);border:1px solid currentColor;border-radius:4px;padding:0 4px;margin-left:4px;vertical-align:1px}
+
+/* index tables */
+.idx-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.idx-wrap{background:var(--card);border-radius:14px;box-shadow:var(--shadow);overflow-x:auto}
+.idx{width:100%;border-collapse:collapse;font-size:13.5px;min-width:560px}
+.idx th{text-align:left;font-size:11px;font-family:var(--mono);letter-spacing:.12em;color:var(--muted);font-weight:700;padding:12px 14px;border-bottom:1px solid var(--line);white-space:nowrap}
+.idx td{padding:10px 14px;border-top:1px solid var(--line);vertical-align:top;line-height:1.55}
+.idx tr:first-child td{border-top:0}
+.idx td.g{font-family:var(--mono);font-weight:700;white-space:nowrap;color:var(--accent)}
+.idx td.n{font-weight:700;min-width:9em}
+.idx td.c{color:var(--muted);font-size:12.5px;min-width:10em}
+
+/* booth event timeline */
+.tl{display:flex;flex-direction:column;gap:14px}
+.hr{background:var(--card);border-radius:14px;box-shadow:var(--shadow);display:grid;grid-template-columns:78px 1fr;overflow:hidden}
+.hr .h{font-family:var(--display);font-size:22px;padding:14px 12px;background:var(--ink);color:var(--paper);text-align:center;font-variant-numeric:tabular-nums}
+.hr ul{list-style:none;margin:0;padding:6px 16px}
+.hr li{display:grid;grid-template-columns:48px 66px 1fr;gap:8px;padding:8px 0;border-top:1px dashed var(--line);font-size:13.5px;line-height:1.55}
+.hr li:first-child{border-top:0}
+.hr .t{font-family:var(--mono);font-weight:700;font-variant-numeric:tabular-nums}
+.hr .b{font-family:var(--mono);color:var(--accent);font-weight:700;font-size:12.5px}
+.hr .w small{display:block;color:var(--muted);font-size:12px}
+@media (max-width:560px){.hr{grid-template-columns:1fr}.hr .h{text-align:left;padding:8px 14px;font-size:18px}.hr li{grid-template-columns:44px 1fr}.hr .b{grid-column:2}.hr .w{grid-column:1/-1}}
+
+/* stage */
+.tabs{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.tab{font:inherit;border:2px solid var(--ink);background:transparent;color:var(--ink);padding:6px 16px;border-radius:10px;cursor:pointer;font-weight:700}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--paper)}
+.tt-wrap{overflow-x:auto;border-radius:14px}
+.tt{display:grid;grid-template-columns:repeat(3,minmax(260px,1fr));gap:14px;min-width:820px}
+.col{background:var(--card);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+.col h3{font-family:var(--display);font-weight:400;font-size:17px;padding:12px 16px;background:var(--ink);color:var(--paper)}
+.col h3 span{font-family:var(--body);font-size:12px;opacity:.75;margin-left:6px}
+.slot{display:grid;grid-template-columns:62px 1fr;gap:10px;padding:10px 16px;border-top:1px solid var(--line)}
+.slot:first-of-type{border-top:0}
+.slot .tm{font-family:var(--mono);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.35;padding-top:2px}
+.slot .tm small{display:block;font-weight:500;color:var(--muted);font-size:11px}
+.slot .ti{font-size:13.5px;line-height:1.55;font-weight:500}
+.slot .ki{display:flex;gap:4px;flex-wrap:wrap;margin-top:4px}
+.slot .ki span{font-size:10.5px;padding:1px 6px;border-radius:4px;background:var(--chip);color:var(--muted)}
+.slot .ki span.kid{background:var(--accent-soft);color:var(--accent)}
+.legend{font-size:12.5px;color:var(--muted);margin-top:10px}
+
+/* courses */
+.courses{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.course{background:var(--card);border-radius:16px;box-shadow:var(--shadow);padding:20px 20px 16px;display:flex;flex-direction:column;gap:10px}
+.course .hd{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.course h3{font-family:var(--display);font-weight:400;font-size:20px}
+.course .dur{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.course p{margin:0;font-size:13.5px;color:var(--muted)}
+.steps{list-style:none;margin:4px 0 0;padding:0;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:28px 1fr;gap:10px;padding:8px 0;border-top:1px dashed var(--line);font-size:13.5px;line-height:1.55}
+.steps li::before{content:counter(s);width:24px;height:24px;border-radius:50%;background:var(--ink);color:var(--paper);display:grid;place-items:center;font-family:var(--mono);font-size:12px;font-weight:700}
+.steps b{display:block;font-size:14px}
+.steps .g{font-family:var(--mono);font-size:12px;color:var(--accent);font-weight:700}
+
+/* food */
+.halls{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.hall{background:var(--card);border-radius:14px;box-shadow:var(--shadow);padding:16px 18px}
+.hall h3{font-size:16px;display:flex;align-items:center;gap:8px}
+.hall h3 .pin{font-family:var(--mono);font-size:11px;background:var(--stamp);color:#fff;border-radius:6px;padding:1px 7px}
+.hall ul{list-style:none;margin:10px 0 0;padding:0}
+.hall li{padding:7px 0;border-top:1px solid var(--line);font-size:13.5px;line-height:1.5}
+.hall li b{display:block;font-size:14px}
+.hall li span{color:var(--muted)}
+
+/* themes */
+.themes{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.theme{background:var(--card);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow);border-top:4px solid var(--c,var(--accent))}
+.theme h3{font-size:15px}
+.theme p{margin:4px 0 0;font-size:13px;color:var(--muted);line-height:1.6}
+
+/* rally */
+.rally{display:grid;grid-template-columns:1.1fr 1fr;gap:18px}
+.panel{background:var(--card);border-radius:16px;box-shadow:var(--shadow);padding:20px}
+.panel h3{font-size:17px;margin-bottom:8px}
+.stamps{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
+.stamps i{width:28px;height:28px;border-radius:50%;border:2px dashed var(--stamp);display:grid;place-items:center;font-style:normal;font-family:var(--mono);font-size:11px;color:var(--stamp);font-weight:700}
+.stamps i.on{background:var(--stamp);color:#fff;border-style:solid}
+.rlist{list-style:none;padding:0;margin:0;font-size:13.5px}
+.rlist li{padding:7px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:10px}
+.rlist li span:last-child{color:var(--muted);text-align:right}
+
+/* info */
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.price{width:100%;border-collapse:collapse;font-size:14px}
+.price td{padding:8px 0;border-top:1px solid var(--line);vertical-align:top}
+.price td:last-child{text-align:right;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;padding-left:10px}
+.price tr:first-child td{border-top:0}
+.plain{margin:0;padding-left:1.1em;font-size:14px}
+.plain li{margin:4px 0}
+footer{padding-block:48px 64px;color:var(--muted);font-size:12.5px}
+footer .wrap{border-top:1px solid var(--line);padding-top:20px;display:flex;flex-direction:column;gap:6px}
+
+@media (max-width:820px){
+  .pass{grid-template-columns:1fr}
+  .pass-stub{border-left:0;border-top:2px dashed var(--line);flex-direction:row;flex-wrap:wrap;gap:18px}
+  .pass-stub::before,.pass-stub::after{display:none}
+  .barcode{display:none}
+  .pass-stub .stat{flex:1 1 90px}
+  .stat .n{font-size:24px}
+  .fields{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rally{grid-template-columns:1fr}
+}
+@media (max-width:440px){
+  .wrap{padding-inline:16px}
+  .pass-main{padding:22px 18px}
+  .grid{grid-template-columns:1fr}
+  .route .code{font-size:38px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .card{transition:transform .18s ease,box-shadow .18s ease}
+  .card:hover{transform:translateY(-3px)}
+  html{scroll-behavior:smooth}
+}
+/* site bar & tickets */
+.sitebar{background:var(--ink);color:var(--paper);font-size:12px;line-height:1.5}
+.sitebar .wrap{display:flex;gap:12px;align-items:center;justify-content:space-between;padding-block:6px;flex-wrap:wrap}
+.sitebar a{color:inherit}
+.adlabel{display:inline-block;font-size:10.5px;font-weight:700;border:1px solid currentColor;border-radius:4px;padding:0 5px;margin-left:6px;vertical-align:1px;letter-spacing:.05em}
+.tickets{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.tk{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:700;font-size:13.5px;border-radius:10px;padding:8px 14px;background:var(--card);color:var(--ink);border:1.5px solid var(--line)}
+.tk:hover{border-color:var(--accent);color:var(--accent)}
+.tk.main{background:var(--stamp);color:#fff;border-color:var(--stamp)}
+.tk .adlabel{margin-left:2px}
+.sharebar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="sitebar"><div class="wrap"><span>非公式ガイド：主催者・出展者とは関係ありません。内容は各社の発表をもとにした要約です。<span id="ad-disclosure" hidden>本ページはアフィリエイト広告を利用しています。</span></span><a href="https://www.t-expo.jp/public" target="_blank" rel="noopener">公式サイト →</a></div></div>
+
+<nav class="nav" aria-label="ページ内メニュー">
+  <div class="wrap">
+    <a class="brand" href="#top">TEJ<b>2026</b></a>
+    <ul>
+      <li><a class="l" href="#favs">★ お気に入り<span class="cnt" id="navcnt"></span></a></li>
+      <li><a class="l" href="#booths">体験ブース</a></li>
+      <li><a class="l" href="#index">食べる・もらう</a></li>
+      <li><a class="l" href="#events">時刻イベント</a></li>
+      <li><a class="l" href="#stage">ステージ</a></li>
+      <li><a class="l" href="#courses">モデルコース</a></li>
+      <li><a class="l" href="#food">グルメ</a></li>
+      <li><a class="l" href="#rally">スタンプラリー</a></li>
+      <li><a class="l" href="#collection">TEJコレクション</a></li>
+      <li><a class="l" href="#info">入場・アクセス</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="pass">
+      <div class="pass-main">
+        <div class="pass-top">
+          <span class="airline">BOARDING PASS · TOURISM EXPO JAPAN 2026</span>
+          <span class="theme-tag">テーマ「進化する旅のカタチ」</span>
+        </div>
+        <div class="route" aria-hidden="true">
+          <div><div class="code">BGS</div><div class="city">東京ビッグサイト</div></div>
+          <div class="path"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z" transform="rotate(90 12 12)"/></svg></div>
+          <div style="text-align:right"><div class="code">WLD</div><div class="city">世界と日本全国</div></div>
+        </div>
+        <h1 class="title">ツーリズムEXPOジャパン2026<br>体験ガイド<small>一般公開日に「どこで・何が体験できて・誰向けで・どれくらいかかるか」をひと目で。公式サイト、出展者のプレスリリース、X（旧Twitter）の告知をもとに、試食の中身やもらえる物まで書き出しました。</small></h1>
+        <div class="fields">
+          <div class="field"><div class="k">Date 1</div><div class="v">9/26（土）<br>10:00–18:00</div></div>
+          <div class="field"><div class="k">Date 2</div><div class="v">9/27（日）<br>10:00–17:00</div></div>
+          <div class="field"><div class="k">Fare</div><div class="v">前売 1,200円<br>当日 1,500円</div></div>
+          <div class="field"><div class="k">Kids</div><div class="v">小学生以下<br>無料（保護者同伴）</div></div>
+        </div>
+      </div>
+      <aside class="pass-stub" aria-label="規模">
+        <div class="stat"><div class="n">1,459</div><div class="t">出展者・団体（出展者検索の登録数）</div></div>
+        <div class="stat"><div class="n">444</div><div class="t">ブース内イベント（会期4日間）</div></div>
+        <div class="stat"><div class="n">3</div><div class="t">ステージ（A・B・TEJコレクション）</div></div>
+        <div class="barcode" aria-hidden="true"></div>
+      </aside>
+    </div>
+    <div class="alert"><span class="stampmark">NOTICE</span><div><strong>お得な前売券は9月25日（金）23:59まで。</strong>9/24・25は業界日のため一般の方は入場できません。最終入場は閉場30分前、会場の当日券窓口は完全キャッシュレスです。</div></div>
+    <div class="tickets" id="tickets-hero"></div>
+    <div class="sharebar"><a class="btn" id="share-x" href="https://twitter.com/intent/tweet" target="_blank" rel="noopener">Xでこのガイドをシェア</a><a class="btn ghost" id="tip" hidden target="_blank" rel="noopener">応援する（投げ銭）</a></div>
+  </div>
+</header>
+
+<main>
+<section id="news" hidden>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Latest</span>
+      <h2>最新情報 <span class="favnote" id="news-at"></span></h2>
+      <p class="lede">出展者のX投稿などから集めた、配布終了・整理券・追加企画などの最新の動きです。</p>
+    </div>
+    <div class="panel"><ul class="news" id="news-list"></ul></div>
+  </div>
+</section>
+
+<section id="favs">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">My List</span>
+      <h2>お気に入り</h2>
+      <p class="lede">ブースのカード、ステージ、ブース内イベントの☆を押すと、ここに集まります。時刻のあるものは日ごとの予定表に並びます。お気に入りはこの端末のこのブラウザに保存されます。</p>
+    </div>
+    <div class="favwrap">
+      <div class="panel"><h3>気になるブース <span class="favnote" id="fav-bn"></span></h3><div id="fav-booths"></div></div>
+      <div class="panel"><h3>時刻つきの予定 <span class="favnote" id="fav-sn"></span></h3><div id="fav-sched"></div></div>
+    </div>
+    <div class="favbar" id="favbar"></div>
+  </div>
+</section>
+
+<section id="booths">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Gate Guide</span>
+      <h2>体験できるブースをさがす</h2>
+      <p class="lede">カード左上の「GATE」が会場でのブース番号です。各カードに「食べる」「もらう」「体験」「時刻」を分けて書きました。<span class="src xl" style="padding:2px 4px;margin-right:4px"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.9-6.4L6.3 22H3.2l7.3-8.3L1 2h6.3l4.4 5.9zm-1.1 18h1.7L6.3 3.9H4.5z"/></svg></span>はXの告知（タップで元投稿へ）、<span class="src">PR</span>はプレスリリース・報道記事が情報源です（どちらもタップで元の情報へ）。想定年齢・所要時間はこのガイドの目安です。</p>
+    </div>
+    <div class="filters" role="group" aria-label="絞り込み">
+      <div class="frow"><span class="lab">エリア</span><span id="f-area" class="frow"></span></div>
+      <div class="frow"><span class="lab">体験</span><span id="f-feat" class="frow"></span></div>
+      <div class="frow"><div class="search"><input id="q" type="search" placeholder="キーワード（例：試飲、制服、パンダ、ワークショップ）" aria-label="キーワードで検索"></div><span class="count" id="count"></span></div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section id="index">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Taste &amp; Take Home</span>
+      <h2>食べる・飲む／もらえる・当たる 早見表</h2>
+      <p class="lede">各ブースで配られる試食・試飲と、プレゼント・抽選の中身を一覧にしました。「条件」はSNSフォロー、アンケート回答、数量限定などの参加条件です。お酒の試飲は20歳以上のみです。</p>
+    </div>
+    <div class="idx-tabs" role="tablist" aria-label="一覧の切り替え">
+      <button class="tab" role="tab" id="idx-eat" aria-selected="true" data-idx="e">食べる・飲む</button>
+      <button class="tab" role="tab" id="idx-gift" aria-selected="false" data-idx="g">もらえる・当たる</button>
+    </div>
+    <div class="idx-wrap"><table class="idx" id="idx"></table></div>
+  </div>
+</section>
+
+<section id="events">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Booth Events</span>
+      <h2>ブース内イベント時刻表</h2>
+      <p class="lede">時刻が決まっている体験・グリーティング・試食の回です。整理券が必要な回は、配布時刻が書かれています。公式の「ブース内イベント検索」から一般日分を抜き出しました。</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="日付">
+      <button class="tab etab" role="tab" id="etab-26" aria-selected="true" data-eday="26">9/26（土）</button>
+      <button class="tab etab" role="tab" id="etab-27" aria-selected="false" data-eday="27">9/27（日）</button>
+    </div>
+    <div class="tl" id="tl"></div>
+  </div>
+</section>
+
+<section id="stage">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Stage Timetable</span>
+      <h2>ステージ・タイムテーブル</h2>
+      <p class="lede">伝統芸能、ダンス、ゲストのトーク、キャラクターとの撮影会まで。各回30分前後なので、ブース巡りの合間に組み込みやすい長さです。</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="日付">
+      <button class="tab" role="tab" id="tab-26" aria-selected="true" data-day="26">9/26（土）</button>
+      <button class="tab" role="tab" id="tab-27" aria-selected="false" data-day="27">9/27（日）</button>
+    </div>
+    <div class="tt-wrap"><div class="tt" id="tt"></div></div>
+    <p class="legend">青いラベル＝お子さま連れにおすすめ（キャラクター・クイズ・体験参加あり）。プログラムは変更になる場合があります。</p>
+  </div>
+</section>
+
+<section id="courses">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Model Courses</span>
+      <h2>目的別モデルコース</h2>
+      <p class="lede">ステージの時刻に合わせた回り方の一例です。ブース同士の距離は会場ガイド（デジタルブック）のフロアマップで確認してください。</p>
+    </div>
+    <div class="courses" id="courses-list"></div>
+  </div>
+</section>
+
+<section id="food">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Food Trucks</span>
+      <h2>会場で味わう“食の旅”</h2>
+      <p class="lede">キッチンカーとグルメコーナーは4か所。ハワイとグアムの屋台は東1ホールにまとまっています。</p>
+    </div>
+    <div class="halls" id="halls"></div>
+  </div>
+</section>
+
+<section id="rally">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Stamp Rally</span>
+      <h2>スタンプラリーで会場を回遊</h2>
+    </div>
+    <div class="rally">
+      <div class="panel">
+        <h3>観光SDGsスタンプラリー（会場全体）</h3>
+        <p style="margin:0;font-size:14px">会場のスタート用二次元コードからエントリーし、参加ブースのコードを読み込みます。10個集めると抽選券を獲得。</p>
+        <div class="stamps" aria-hidden="true"><i class="on">1</i><i class="on">2</i><i class="on">3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>10</i></div>
+        <ul class="plain">
+          <li><b>成田国際空港（W-07）</b>は必ず押すマストスタンプ</li>
+          <li>参加ブースはハワイ州観光局、タイ、ポルトガル、東北観光推進機構/JR東日本、愛知県、日光市、JTBなど42か所</li>
+          <li>スマートフォンのみ参加可（PC・タブレット・ガラケー不可）</li>
+          <li>想定：小学生〜（保護者のスマホで一緒に）・所要60分〜</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>ブースごとのラリー・クイズ</h3>
+        <ul class="rlist" id="rlist"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="collection">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">TEJ Collection</span>
+      <h2>TEJコレクション ～選べる旅、ひろがる世界～</h2>
+      <p class="lede">「旅のスタイル」から探せる特集エリア。今年はウェルネスとガストロノミーが加わり11テーマになりました。ブース番号が「TC」で始まるエリアです。</p>
+    </div>
+    <div class="themes" id="themes"></div>
+  </div>
+</section>
+
+<section id="info">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Tickets &amp; Access</span>
+      <h2>入場券・アクセス・持ち物</h2>
+    </div>
+    <div class="info">
+      <div class="panel">
+        <h3>入場料（税込）</h3>
+        <div class="tickets" id="tickets-info" style="margin:0 0 12px"></div>
+        <table class="price">
+          <tr><td>前売入場券（大人）<br><small style="color:var(--muted)">9/25（金）23:59まで</small></td><td>1,200円</td></tr>
+          <tr><td>当日入場券（大人）</td><td>1,500円</td></tr>
+          <tr><td>学生（来場登録＋当日有効な学生証）</td><td>無料</td></tr>
+          <tr><td>障がい者手帳をお持ちの方（介助者1名まで同額）</td><td>1,000円</td></tr>
+          <tr><td>小学生以下（保護者同伴に限る）</td><td>無料</td></tr>
+        </table>
+        <p style="font-size:12.5px;color:var(--muted);margin:10px 0 0">公式サイト・楽天トラベルなど日付指定なしの券で2日間入る場合は、1日分ずつ2回購入します。<a href="https://www.t-expo.jp/public/ticket" target="_blank" rel="noopener">入場券の詳細</a></p>
+      </div>
+      <div class="panel">
+        <h3>会場・アクセス</h3>
+        <p style="margin:0 0 8px;font-size:14px"><b>東京ビッグサイト</b>（東京都江東区有明3-11-1）</p>
+        <ul class="plain">
+          <li>ゆりかもめ「東京ビッグサイト駅」徒歩約3分</li>
+          <li>りんかい線「国際展示場駅」徒歩約7分</li>
+          <li>都営バス 東京駅から約40分（都05-2・東16系統）</li>
+          <li>TOKYO BRT 新橋から約17分＋徒歩7分</li>
+          <li>ゆりかもめ乗車券とのセット券「Enjoy Pass」あり</li>
+        </ul>
+        <p style="font-size:12.5px;margin:10px 0 0"><a href="https://www.t-expo.jp/access" target="_blank" rel="noopener">会場アクセス（公式）</a></p>
+      </div>
+      <div class="panel">
+        <h3>行く前にチェック</h3>
+        <ul class="plain">
+          <li>Eチケットはスマホ画面で提示（印刷不可、コンビニ購入分を除く）</li>
+          <li>当日券窓口・会場内はキャッシュレス前提。交通系IC、PayPayなど対応</li>
+          <li>開場直後は混雑。10時台を少し外すとスムーズ</li>
+          <li>試飲のお酒は20歳以上。整理券制の体験（韓国館など）は早めに</li>
+          <li>ペット同伴不可。スタンプラリーやLINE登録用にスマホの充電を</li>
+        </ul>
+        <p style="font-size:12.5px;margin:10px 0 0"><a href="https://tej-venue-guide.meclib.jp/library/books/tej2026_venue-guide_jp/book/index.html" target="_blank" rel="noopener">会場ガイド（フロアマップ）</a> · <a href="https://www2.t-expo.jp/BoothEvents/search/ja/BtoC/" target="_blank" rel="noopener">ブース内イベント一覧</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>情報源：ツーリズムEXPOジャパン公式サイト（おすすめブース紹介、ブース内イベント検索、注目出展ブース第一弾・第二弾、TEJコレクション紹介、ステージタイムテーブル、会場内飲食コーナー、観光SDGsスタンプラリー、入場券、会場アクセス、出展者検索）、各出展者のプレスリリース（<span class="src">PR</span>）、出展者・関係者のX投稿（<span class="src">X</span>）。2026年9月24日20時時点。</div><div>X投稿は出展者自身の告知が中心ですが、一部に来場者の投稿を含み、その場合は本文に明記しています。配布物は数量限定のものが多く、なくなり次第終了します。</div>
+    <div>カードのイラストは雰囲気を伝えるためのイメージです。実際のブースの写真は各カードの「写真と詳細（公式）」からご覧ください。想定年齢・所要時間は本ガイドによる目安で、公式発表ではありません。内容は予告なく変更になる場合があります。</div>
+  </div>
+</footer>
+
+<script>
+/* ---------- illustration generator ---------- */
+function art(m, p){
+  const [a,b,c,d] = p; // sky top, sky bottom, mid, accent
+  const W=400,H=200;
+  let g = `<defs><linearGradient id="g${m}${a.slice(1)}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="${b}"/></linearGradient></defs><rect width="${W}" height="${H}" fill="url(#g${m}${a.slice(1)})"/>`;
+  const sun=(x,y,r,col)=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${col}"/>`;
+  const hills=(col,y,amp)=>`<path d="M0 ${y} Q100 ${y-amp} 200 ${y} T400 ${y} V200 H0Z" fill="${col}"/>`;
+  switch(m){
+    case "mountain": g+=sun(300,62,26,d)+`<path d="M0 170 L90 70 L150 130 L230 50 L330 150 L400 110 V200 H0Z" fill="${c}"/><path d="M230 50 L255 78 L240 74 L230 86 L218 76 L207 80Z" fill="#fff" opacity=".85"/><path d="M90 70 L108 90 L96 88 L88 96 L78 86Z" fill="#fff" opacity=".8"/>`+hills(d,185,20);break;
+    case "sea": g+=sun(90,70,30,d)+`<rect y="120" width="400" height="80" fill="${c}"/>`+[130,150,170,188].map((y,i)=>`<path d="M0 ${y} q25 -8 50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0" stroke="#fff" stroke-opacity="${.55-i*.1}" stroke-width="2.5" fill="none"/>`).join("");break;
+    case "palm": g+=sun(310,70,34,d)+`<rect y="138" width="400" height="62" fill="${c}"/><path d="M0 150 Q200 130 400 150" stroke="#fff" stroke-opacity=".5" stroke-width="2" fill="none"/><path d="M110 200 Q118 130 140 80" stroke="#3b2a1a" stroke-width="7" fill="none" stroke-linecap="round"/>`+[[-70,-10],[-30,-40],[20,-35],[60,-5],[-5,-55]].map(([dx,dy])=>`<path d="M140 80 Q${140+dx/2} ${80+dy-10} ${140+dx} ${80+dy+25}" stroke="#1f5b3a" stroke-width="9" fill="none" stroke-linecap="round"/>`).join("");break;
+    case "city": g+=sun(70,55,20,d);{let x=0,i=0;while(x<400){const w=24+((i*37)%30),h=50+((i*53)%90);g+=`<rect x="${x}" y="${200-h}" width="${w}" height="${h}" fill="${c}" opacity="${.75+((i%3)*.1)}"/>`;for(let wy=200-h+10;wy<190;wy+=16){g+=`<rect x="${x+6}" y="${wy}" width="${w-12}" height="4" fill="${d}" opacity=".55"/>`}x+=w+4;i++}}break;
+    case "temple": g+=sun(300,60,28,d)+hills(c,180,14)+[0,1,2,3].map(i=>{const y=150-i*28,w=110-i*18;return `<path d="M${200-w/2-14} ${y} L${200+w/2+14} ${y} L${200+w/2} ${y-12} L${200-w/2} ${y-12}Z" fill="${d}"/><rect x="${200-w/2+10}" y="${y}" width="${w-20}" height="16" fill="${c}"/>`}).join("")+`<rect x="197" y="34" width="6" height="36" fill="${d}"/>`;break;
+    case "lantern": g+=`<path d="M0 30 Q200 70 400 30" stroke="${c}" stroke-width="2" fill="none"/>`+[40,110,180,250,320,380].map((x,i)=>{const y=30+Math.sin(x/127*Math.PI)*30+8;return `<line x1="${x}" y1="${y-8}" x2="${x}" y2="${y}" stroke="${c}" stroke-width="2"/><ellipse cx="${x}" cy="${y+26}" rx="20" ry="26" fill="${i%2?d:"#E23B2E"}"/><rect x="${x-9}" y="${y}" width="18" height="5" fill="#E8B84A"/><rect x="${x-9}" y="${y+47}" width="18" height="5" fill="#E8B84A"/>`}).join("")+hills(c,190,12);break;
+    case "balloon": g+=hills(c,160,30)+`<path d="M0 185 Q120 150 250 180 T400 170 V200 H0Z" fill="${d}" opacity=".6"/>`+[[90,70,26,"#E8573F"],[210,50,32,"#F2B233"],[320,90,22,"#3F8FC9"],[270,130,14,"#E86A9A"]].map(([x,y,r,col])=>`<ellipse cx="${x}" cy="${y}" rx="${r}" ry="${r*1.15}" fill="${col}"/><path d="M${x-r*.55} ${y+r*.9} L${x-r*.2} ${y+r*1.5} M${x+r*.55} ${y+r*.9} L${x+r*.2} ${y+r*1.5}" stroke="#5a4030" stroke-width="1.5"/><rect x="${x-r*.22}" y="${y+r*1.5}" width="${r*.44}" height="${r*.35}" fill="#6b4a2f"/>`).join("");break;
+    case "train": g+=`<path d="M0 150 L80 70 L160 140 L250 60 L400 150 V200 H0Z" fill="${c}"/><rect y="170" width="400" height="30" fill="#2f3a33"/><rect y="168" width="400" height="4" fill="#9aa"/><rect x="110" y="118" width="130" height="50" rx="6" fill="${d}"/><rect x="220" y="100" width="40" height="68" rx="4" fill="${d}"/><rect x="236" y="84" width="12" height="18" fill="#333"/><circle cx="140" cy="170" r="11" fill="#222"/><circle cx="190" cy="170" r="11" fill="#222"/><circle cx="240" cy="170" r="11" fill="#222"/>`+[0,1,2].map(i=>`<circle cx="${250+i*22}" cy="${70-i*14}" r="${10+i*5}" fill="#fff" opacity="${.6-i*.15}"/>`).join("");break;
+    case "strata": g+=[0,1,2,3,4].map(i=>`<path d="M0 ${90+i*24} Q200 ${76+i*24} 400 ${96+i*24} V200 H0Z" fill="${i%2?c:d}" opacity="${.55+i*.09}"/>`).join("")+`<g transform="translate(290 140)" fill="none" stroke="#fff" stroke-width="3" opacity=".85"><path d="M0 0 a6 6 0 1 1 6 6 a12 12 0 1 1 -12 -12 a18 18 0 1 1 18 18"/></g><path d="M60 88 q10 -40 40 -46 q30 -2 34 20 l40 6 q-6 12 -34 10 l-8 16 h-10 l-2 -10 l-20 0 l-4 12 h-10 l0 -14 q-20 4 -26 6z" fill="${c}"/>`;break;
+    case "wave": g+=`<path d="M0 200 V130 Q60 60 150 90 Q110 100 120 130 Q160 70 240 110 Q200 120 210 150 Q280 90 400 130 V200Z" fill="${c}"/><path d="M150 90 q-14 10 -6 24 M240 110 q-14 10 -6 24" stroke="#fff" stroke-width="4" fill="none"/>`+[0,1,2,3,4,5].map(i=>`<circle cx="${140+i*18}" cy="${86-((i*7)%12)}" r="4" fill="#fff"/>`).join("")+`<path d="M310 110 L340 60 L370 110Z" fill="${d}"/><path d="M332 74 L340 60 L348 74Z" fill="#fff"/>`;break;
+    case "onsen": g+=hills(c,150,20)+`<ellipse cx="200" cy="165" rx="120" ry="24" fill="${d}"/><ellipse cx="200" cy="160" rx="104" ry="16" fill="#9fd3de"/>`+[150,200,250].map(x=>`<path d="M${x} 130 q-14 -18 0 -36 q14 -18 0 -36" stroke="#fff" stroke-width="7" fill="none" stroke-linecap="round" opacity=".85"/>`).join("");break;
+    case "food": g+=`<rect y="140" width="400" height="60" fill="${c}"/><ellipse cx="160" cy="140" rx="92" ry="26" fill="#fff"/><ellipse cx="160" cy="136" rx="70" ry="17" fill="${d}"/>`+[[130,128],[160,124],[190,130],[150,138],[178,140]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="9" fill="#fff" opacity=".6"/>`).join("")+`<rect x="280" y="92" width="52" height="56" rx="6" fill="#fff"/><path d="M332 104 q20 4 0 30" stroke="#fff" stroke-width="6" fill="none"/><rect x="286" y="100" width="40" height="12" fill="${d}" opacity=".7"/>`+[296,312].map(x=>`<path d="M${x} 82 q-8 -12 0 -24" stroke="#fff" stroke-width="3" fill="none" opacity=".8"/>`).join("");break;
+    case "wine": g+=hills(c,150,30)+[60,130,300,360].map(x=>`<path d="M${x} 150 V110" stroke="#4b3a2a" stroke-width="3"/>`+[0,1,2,3,4,5].map(i=>`<circle cx="${x-8+(i%3)*8}" cy="${116+Math.floor(i/3)*9}" r="5" fill="${d}"/>`).join("")).join("")+`<path d="M200 60 h40 q0 40 -20 46 q-20 -6 -20 -46z" fill="#fff" opacity=".9"/><path d="M203 70 h34 q-2 28 -17 32 q-15 -4 -17 -32z" fill="${d}"/><rect x="218" y="106" width="4" height="36" fill="#fff"/><rect x="204" y="140" width="32" height="5" rx="2" fill="#fff"/>`;break;
+    case "craft": g+=`<path d="M40 40 Q200 210 360 40" stroke="${c}" stroke-width="2" fill="none"/>`+Array.from({length:17},(_,i)=>{const t=i/16,x=40+320*t,y=40+2*(1-t)*t*170;return `<circle cx="${x}" cy="${y}" r="${9+(i%3)*2}" fill="${[d,"#E8573F","#F2B233","#3F8FC9","#fff"][i%5]}"/>`}).join("")+`<rect x="176" y="150" width="48" height="36" rx="4" fill="#F2D38A"/><path d="M200 150 v-12" stroke="#333" stroke-width="2"/><path d="M200 138 q-6 -10 0 -18 q6 8 0 18" fill="#F2B233"/>`;break;
+    case "plane": g+=sun(320,150,40,d)+`<path d="M0 150 Q100 140 200 150 T400 150" stroke="#fff" stroke-opacity=".5" stroke-width="2" fill="none"/><path d="M40 140 L230 70" stroke="#fff" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round" opacity=".8"/><g transform="translate(250 62) rotate(-20)" fill="#fff"><path d="M-40 0 q0 -8 12 -8 h70 q14 0 20 8 q-6 8 -20 8 h-70 q-12 0 -12 -8z"/><path d="M0 -4 L-18 -40 h10 L22 -4z"/><path d="M0 4 L-18 40 h10 L22 4z"/><path d="M-34 -4 L-44 -20 h8 L-24 -4z"/></g>`;break;
+    case "ship": g+=sun(90,60,24,d)+`<rect y="150" width="400" height="50" fill="${c}"/><path d="M90 150 L110 175 H320 L340 150Z" fill="#fff"/><rect x="130" y="118" width="170" height="32" fill="#fff"/><rect x="160" y="96" width="110" height="22" fill="#fff"/>`+Array.from({length:9},(_,i)=>`<rect x="${140+i*18}" y="128" width="8" height="8" rx="2" fill="${c}"/>`).join("")+`<rect x="236" y="74" width="22" height="22" fill="${d}"/>`+[168,186].map(y=>`<path d="M0 ${y} q25 -6 50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0" stroke="#fff" stroke-opacity=".5" stroke-width="2" fill="none"/>`).join("");break;
+    case "castle": g+=sun(320,55,22,d)+hills(c,175,10)+`<rect x="140" y="130" width="120" height="45" fill="#eee"/><path d="M120 132 L280 132 L260 116 L140 116Z" fill="${c}"/><rect x="155" y="100" width="90" height="16" fill="#eee"/><path d="M140 102 L260 102 L240 86 L160 86Z" fill="${c}"/><rect x="172" y="72" width="56" height="14" fill="#eee"/><path d="M160 74 L240 74 L222 56 L178 56Z" fill="${c}"/><path d="M0 200 L60 170 H340 L400 200Z" fill="#8b8f86"/>`;break;
+    case "fan": g+=`<g transform="translate(200 175)">`+Array.from({length:13},(_,i)=>{const a1=Math.PI+i*Math.PI/13,a2=a1+Math.PI/13;return `<path d="M0 0 L${150*Math.cos(a1)} ${150*Math.sin(a1)} A150 150 0 0 1 ${150*Math.cos(a2)} ${150*Math.sin(a2)}Z" fill="${i%2?d:c}"/>`}).join("")+`<circle r="40" fill="${a}"/><circle r="6" fill="#222"/></g>`+[[60,50],[340,60],[320,30]].map(([x,y])=>`<g transform="translate(${x} ${y})" fill="#F7C6D0">${[0,72,144,216,288].map(r=>`<ellipse rx="5" ry="10" transform="rotate(${r}) translate(0 -9)"/>`).join("")}</g>`).join("");break;
+    case "forest": g+=sun(80,60,24,d)+Array.from({length:14},(_,i)=>{const x=i*30+((i*13)%20),h=60+((i*29)%60);return `<path d="M${x} 190 L${x+18} ${190-h} L${x+36} 190Z" fill="${c}" opacity="${.7+(i%3)*.1}"/>`}).join("")+`<rect y="186" width="400" height="14" fill="${c}"/>`;break;
+    case "desert": g+=sun(300,70,36,d)+`<path d="M0 150 Q100 110 200 150 T400 140 V200 H0Z" fill="${c}"/><path d="M0 175 Q150 145 260 175 T400 170 V200 H0Z" fill="${d}" opacity=".7"/><path d="M80 150 v-40 m0 14 q-14 0 -14 -14 m14 6 q12 0 12 -12" stroke="#2f5d3a" stroke-width="8" fill="none" stroke-linecap="round"/>`;break;
+    case "dance": g+=[0,1,2,3].map(i=>`<path d="M-20 ${170-i*30} C 90 ${90-i*30}, 210 ${230-i*30}, 420 ${120-i*30}" stroke="${[c,d,"#fff","#F2B233"][i]}" stroke-width="${14-i*2}" fill="none" opacity=".85"/>`).join("")+sun(330,50,16,"#fff");break;
+    case "leaf": g+=sun(310,60,22,d)+hills(c,170,26)+`<path d="M200 60 q60 20 40 90 q-70 -10 -40 -90z" fill="${d}"/><path d="M200 60 q10 50 40 90" stroke="#fff" stroke-width="2" fill="none"/><path d="M150 95 q-50 10 -40 70 q60 -10 40 -70z" fill="#7fbf6a"/>`;break;
+    default: g+=sun(200,100,40,d);
+  }
+  return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">${g}</svg>`;
+}
+
+/* ---------- data ---------- */
+/* e=食べる・飲む, gi=もらえる・当たる, d=体験。末尾 "|X" はX告知、"|PR" はプレスリリース由来 */
+const X = "https://www2.t-expo.jp/exhibitors/view/ja/";
+const B = [
+ // 海外
+ {n:"メキシコ",g:"B-01",a:"海外",r:"中南米・カリブ",m:"desert",p:["#F7C873","#F6E2B4","#D9763B","#E24A33"],c:"グアナファト、ロス・カボス、メキシコシティなど5地域の代表が迎える“五感のメキシコ”。",e:["グアナファトの本格グルメ試食"],gi:[],d:["伝統衣装の騎馬の男性「チャロ」と記念撮影"],age:"全年齢",t:"15〜20分",f:["food","photo"],u:"50286"},
+ {n:"ヨーロッパ観光委員会",g:"D-18",a:"海外",r:"ヨーロッパ（9か国・21団体）",m:"city",p:["#8FB7E0","#DCE8F4","#3C5A86","#F2C14E"],c:"9か国の政府観光局とユーロスターなどが集結。鉄道旅や各国グルメの最新情報を一度に。",e:[],gi:["特製ステッカー","「ハシビリョコウ」コラボ缶バッジ","スマホのクイズ大会で優秀者にヨーロッパ各国のプレゼント"],d:["スマホで参加するヨーロッパクイズ大会","JTBと協業のデジタルスタンプラリー","JTBブースで観光局スタッフ×添乗員のトーク"],age:"小学生〜",t:"20〜30分",f:["quiz","gift","rally"],u:"49545"},
+ {n:"スペイン",g:"D-21",a:"海外",r:"ヨーロッパ",m:"sea",p:["#F6C453","#FBE8B4","#C0392B","#F2B233"],c:"スペイン各地から旅のプロが集まり、最新のグルメ事情や観光スポットを直接紹介。",e:[],gi:[],d:["各地の旅のプロによるプレゼン（9/26・27）|X:https://x.com/SpainInJapan/status/2102956384966807974"],age:"大人向け",t:"20〜30分",f:["talk"]},
+ {n:"ポルトガル",g:"D-19",a:"海外",r:"ヨーロッパ",m:"sea",p:["#F4C27A","#FBE9CF","#2F6FA8","#E8573F"],c:"19の観光事業者と3地域が参加するポルトガル・パビリオン。",e:["出来立てのパステル・デ・ナタ（エッグタルト）","プレミアム「Delta Coffee」","各地域のワイン（20歳以上。9/26 16:00にワインセミナー＆試飲会）"],gi:["ポルトガル関連グッズ・ノベルティ（在庫次第）"],d:["イワシの缶詰パッキングワークショップ（両日11:00）","ポルトガルギター（ファド）の生演奏（9/26 14:30）","9/27 16:00 ミシュラン星付きシェフのトーク"],age:"全年齢（ワインは20歳以上）",t:"20〜40分",f:["food","gift","workshop"],u:"49435"},
+ {n:"ルーマニア",g:"D-08",a:"海外",r:"ヨーロッパ",m:"mountain",p:["#A9C9D8","#E7F0EA","#4E7A57","#F2B233"],c:"テーマは「Why Romania?」。自然と人が共に生きる、素顔のルーマニア。",e:["ハイキングで親しまれてきた素朴な地元のお菓子"],gi:["各地の魅力を紹介するポストカード風カード","現地クリエイター制作のテーマ別パンフレット"],d:["農村の暮らしや伝統工芸の映像"],age:"全年齢",t:"10分",f:["food","gift"],u:"49780"},
+ {n:"ポーランド",g:"D-17",h:"東1ホール",a:"海外",r:"ヨーロッパ",m:"craft",p:["#F3E6D0","#FBF6EC","#9C5B3B","#C8342E"],c:"クラクフの祝祭キャラクター「ライコニク」が来日。伝統工芸のワークショップが充実。",e:[],gi:["SNSにつながるQRコード付きコースター|PR:https://travel.watch.impress.co.jp/docs/news/2142972.html"],d:["マウォポルスカ地方の木製ビーズの首飾り「コラレ」づくり","ルブリン地方、諸聖人の日に由来する蜜蝋キャンドルづくり","祝祭キャラクター「ライコニク」が登場","現地旅行会社にモデルルートを個別相談"],age:"小学生〜（工作は親子で）",t:"30〜40分",f:["workshop","kids","gift"],u:"49482"},
+ {n:"中国",g:"G-12",a:"海外",r:"アジア",m:"lantern",p:["#2B2F55","#5A4A7A","#1C1F3A","#F2B233"],c:"見て・体験して・楽しめる中国。“日本で唯一”をうたうパンダロボットも登場。",e:[],gi:["SNSフォローで豪華景品の抽選会"],d:["拓本、蓮の花の香袋、中秋のミニランタン、螺鈿細工アクセサリー、金箔扇子づくり（時刻は時刻表参照）","貴州省の民族衣装の試着（9/27）","中国を旅した気分になれるVR体験","上海ディズニーリゾートのマジックガイド（10周年シール・ポストカード付き）配布（来場者の投稿、9/24時点）|X:https://x.com/join_in/status/2102972156414210137","パンダの着ぐるみ・パンダロボットと記念撮影|X:https://x.com/cnta_official/status/2100759210388840896"],age:"全年齢",t:"30〜45分",f:["kids","photo","workshop","vr","gift"],u:"49425"},
+ {n:"タイ",g:"G-09",a:"海外",r:"アジア",m:"temple",p:["#F5B98A","#FBE3C9","#B0652F","#D9A322"],c:"テーマは「Healing is the New Luxury～癒しこそ、新しいラグジュアリー」。",e:[],gi:[],d:["好きな香りを選んで作るハーブ吸入器「ヤードム」|PR:https://thailandtravel.or.jp/news/168295/","タオ島の廃棄ガラスを使ったシーグラスのキーホルダーづくり|PR:https://thailandtravel.or.jp/news/168295/","チェンマイの伝統「ネイルダンス」とストレッチ・マッサージ体験|PR:https://thailandtravel.or.jp/news/168295/","タイ観光大使・佐藤三兄弟のトークショー|X:https://x.com/AmazingThaiJP/status/2102632281747898789"],age:"小学生〜大人",t:"30分",f:["workshop","talk"],u:"49474"},
+ {n:"マレーシア",g:"G-32",a:"海外",r:"アジア",m:"palm",p:["#F4C66B","#FBEBC6","#1F6F5C","#C8342E"],c:"マレーシア観光年2026の公式マスコット、マレーグマの「ウィラ」と「マンジャ」が来場。",e:[],gi:["ハシビリョコウ×ウィラ＆マンジャのコラボ缶バッジ（アンケート・クイズ回答、1日300個）|PR:https://www.atpress.ne.jp/news/4532046"],d:["バティック（ろうけつ染め）の塗り体験|PR:https://www.atpress.ne.jp/news/4532046","ウィラ＆マンジャのグリーティング"],age:"全年齢",t:"20分",f:["kids","workshop","gift"],u:"49437"},
+ {n:"パシフィック・ノースウエスト × デルタ航空",g:"A-10",a:"海外",r:"北米（シアトル・ワシントン州ほか）",m:"forest",p:["#9CC3D5","#E3EFF2","#2E5E4E","#F2C14E"],c:"日本から最も近い北米、シアトル・ポートランドエリアを4観光局と航空会社で紹介。",e:[],gi:["スタンプラリーで各団体のオリジナルグッズが当たる"],d:["A-08〜A-11の4ブースを巡るスタンプラリー","おすすめスポットをマップで紹介"],age:"全年齢",t:"15〜20分",f:["rally","gift"],u:"49552"},
+ {n:"ロサンゼルス観光局",g:"要確認",a:"海外",r:"北米",m:"palm",p:["#F6A96B","#FCE0C4","#2A6F97","#F2C14E"],c:"LAの最新情報と、インフルエンサーコーナーの動画。",e:[],gi:["LAグッズが当たる抽選会|X:https://x.com/LosAngelesJP/status/2102976063177621829"],d:["インフルエンサーコーナーで動画を視聴|X:https://x.com/LosAngelesJP/status/2102976063177621829"],age:"全年齢",t:"10分",f:["gift"]},
+ {n:"ハワイ州観光局",g:"A-13",a:"海外",r:"北米",m:"palm",p:["#6EC6D9","#CFF0F2","#1E8FA6","#F7B545"],c:"テーマは「楽しもう、ハワイ」。隣接する「ハワイグルメエリア」と一緒に楽しめます。",e:["隣のハワイグルメエリアでローカルフード（東1ホールのキッチンカー）"],gi:["アウトリガー・リゾーツのSNSフォローで先着TAMO特製ステッカー|X:https://x.com/outriggerjp/status/2103024982276313259"],d:["どの世代でも遊べるゲームコーナー","旅の情報収集コーナー（16のホテル・施設が参加）"],age:"全年齢",t:"20〜30分",f:["kids","food","gift"],u:"50662"},
+ {n:"台湾",g:"G-06",a:"海外",r:"アジア（台湾観光代表団100社超）",m:"train",p:["#9FD0C1","#E4F3EC","#3F7A5A","#C9473A"],c:"テーマは「遊び尽くせ！台湾」。阿里山林業鉄道の機関車をモチーフにした没入エリアが登場。",e:["南投県の茶文化「山中茶學」による台湾茶の茶席体験|PR:https://go-taiwan.net/gogotaiwan/"],gi:["デジタルスタンプラリーで台湾の交通券・宿泊券などが当たる|PR:https://go-taiwan.net/gogotaiwan/","観光クイズで航空券などが当たる|PR:https://go-taiwan.net/gogotaiwan/"],d:["藺草（いぐさ）編みのDIY|PR:https://go-taiwan.net/gogotaiwan/","先住民族の口琴（こうきん）づくり|PR:https://go-taiwan.net/gogotaiwan/","映像・香り・音で山林を感じる没入型エリア","タロコ族「マリバリ文化芸術団」の舞踊・演奏"],age:"全年齢",t:"30〜45分",f:["workshop","food","vr","rally","kids","gift"],u:"49491"},
+ {n:"オーストラリア",g:"H-09",a:"海外",r:"大洋州",m:"desert",p:["#F0A45B","#F9D9B1","#C4622D","#FCE38A"],c:"大自然の空気を感じる没入型体験と、主要都市別のセミナー。",e:[],gi:[],d:["オーストラリアの大自然を感じる没入型体験","都市別セミナー（時間割あり）","楽しみながら知るアクティビティ"],age:"全年齢",t:"20〜30分",f:["vr"],u:"49490"},
+ {n:"タヒチ観光局・エア タヒチ ヌイ",g:"H-08",a:"海外",r:"大洋州",m:"sea",p:["#4FC3D6","#CDEFF4","#1A8FA0","#F28C38"],c:"ポリネシア文化の中心地タヒチ。Aステージではタヒチアンダンスも。",e:["タヒチ特産パイナップルジュース（9/26 13:00）","サンゴ礁の畑で育つタヒチ産ワイン「ヴァン・ド・タヒチ」（9/26 15:00のセミナー、20歳以上）"],gi:[],d:["ポリネシアン・タトゥー風のボディペイント（9/26 11:00）"],age:"全年齢（ワインは20歳以上）",t:"15〜30分",f:["food","kids"]},
+ {n:"韓国観光公社（韓国館）",g:"G-33",h:"東2ホール",a:"海外",r:"アジア・TEJ2026最大のブース",m:"city",p:["#F7B7C5","#FCE6EB","#4A5AA8","#E94B6A"],c:"テーマは「今日行く？韓国！」。美容、グルメ、韓流、地方都市まで最新情報が集まる最大ブース。",e:[],gi:[],d:["韓服を着てフォトゾーンで撮影","K-Beautyのパーソナルカラー診断（ブース前で整理券）","韓国で人気のキーボード型キーホルダーづくり（ブース前で整理券）","K-POPライブ、クイズ大会、公式キャラ「キングダムフレンズ」","9/26 高橋愛、9/27 松岡充・阿部敦のトークショー"],age:"小学生〜大人",t:"45〜60分",f:["photo","workshop","kids","talk"],u:"49446"},
+ {n:"ソウル観光財団（Visit Seoul）",g:"G-35",h:"東2ホール",a:"海外",r:"アジア",m:"city",p:["#243B6B","#51407E","#15213F","#F5C542"],c:"テーマは「Seoul: Day and Night」。9つの観光パートナーが昼も夜もソウルを案内。",e:["ラッキードローでソウルのお菓子が当たることも"],gi:["限定ポスター（両日11:30・13:30に配布）|X:https://x.com/VisitSeoul_JP/status/2103007786515022198","スタンプ5つでラッキードロー（レンチキュラーキーホルダー、ソウルのお菓子、観光グッズ）"],d:["韓国語の名前シールを貼る螺鈿キーホルダーづくり（両日14:30）","昼夜のおすすめスポット「Day & Night ルーレット」（両日11:30）","K-POPカバーダンス（両日13:00）"],age:"小学生〜",t:"20〜40分",f:["workshop","rally","gift"],u:"49523"},
+ {n:"トルコ（カッパドキア）",g:"D-26",a:"海外",r:"ヨーロッパ",m:"balloon",p:["#F6C9A0","#FCEBDD","#C98A5A","#E0A26B"],c:"54㎡の開放型ブースで、カッパドキアの壮大な景観と文化遺産を紹介。",e:[],gi:[],d:["カッパドキアの景観・文化・体験メニューの紹介"],age:"全年齢",t:"10分",f:[],u:"51019"},
+ {n:"ジョージア",g:"D-14",a:"海外",r:"ヨーロッパ",m:"wine",p:["#C7B7D8","#EEE7F3","#6D4E86","#7A2340"],c:"約8,000年のワイン造りの伝統をもつ国。観光関係者が常駐して直接案内。",e:["ジョージアワイン（20歳以上）"],gi:[],d:["ワイン造りの歴史と各地の観光地の案内"],age:"大人向け（試飲は20歳以上）",t:"15分",f:["food"],u:"49511"},
+ {n:"南アフリカ観光局",g:"C-07",a:"海外",r:"アフリカ",m:"desert",p:["#F3B35B","#FBE3BD","#2F6B45","#D64527"],c:"ワインとルイボスティー、そしてラグビー世界王者にあやかった体験ゲーム。",e:["南アフリカ産ワイン（20歳以上）|X:https://x.com/GoToSAJP/status/2100420010816782746","ルイボスティー|X:https://x.com/GoToSAJP/status/2100420010816782746"],gi:[],d:["アフリカン柄のヘアゴムづくり、ビーズブレスレットの手作り（9/27）","ラグビー体験ゲーム","ドラムカフェのミニライブ（両日12:00）"],age:"全年齢（ワインは20歳以上）",t:"20〜30分",f:["food","workshop","kids"]},
+ // 国内
+ {n:"向島花街",g:"K-12",a:"国内",r:"東京都墨田区",nw:1,m:"fan",p:["#2A1F3D","#5B2F4F","#B8344A","#E7B04B"],c:"お座敷を再現したブースで、江戸から続く「粋」の文化を間近に。",e:[],gi:["向島花街限定の千社札シール"],d:["現役芸妓とのフォトセッション（正午〜14時頃予定）","芸妓と楽しむ「お座敷遊び」（正午〜14時頃予定）"],age:"全年齢",t:"20分",f:["photo","gift"],u:"49649"},
+ {n:"動き出す浮世絵ミュージアム",g:"TC2-04",a:"TEJコレクション",r:"コンテンツツーリズム",nw:1,m:"wave",p:["#E9DDC2","#F6EFDD","#1F4E79","#C4412A"],c:"2027年春、銀座に常設施設がオープン。60万人以上を集めた没入型アート展の最新情報。",e:[],gi:["ノベルティ（数量限定）"],d:["LEDディスプレイで施設概要を紹介"],age:"全年齢",t:"10分",f:["gift"],u:"49827"},
+ {n:"新温泉町（兵庫県）",g:"M-15",a:"国内",r:"近畿",nw:1,m:"onsen",p:["#A9C8DA","#E7F0F5","#4F7F6A","#8A5A3C"],c:"湯村・浜坂・七釜の3つの温泉と、松葉がに・但馬牛の町。",e:[],gi:["温泉の素","町内の温泉施設利用券"],d:[],age:"全年齢",t:"10分",f:["gift"],u:"49486"},
+ {n:"三重のまんなか",g:"L-09",a:"国内",r:"松阪市・多気町・明和町・大台町",nw:1,m:"mountain",p:["#B8D4C0","#EDF4EE","#3E6B4C","#C4412A"],c:"松阪牛、斎王ゆかりの歴史、秘境・大杉谷。まだ知られていない三重の魅力。",e:[],gi:["アンケート回答で伊勢茶ティーバッグなど4市町の特産品ノベルティ"],d:[],age:"全年齢",t:"10分",f:["gift"],u:"49789"},
+ {n:"三重県・尾鷲市",g:"L-15",a:"国内",r:"東海",m:"forest",p:["#BFD8C4","#EEF5EF","#2F6B4F","#D9A13A"],c:"熊野古道のひのきの町・尾鷲と、三重県のクイズラリー。",e:[],gi:["みえ旅クイズラリー＆ガラガラ抽選会（1等ホテル宿泊券）"],d:["尾鷲ひのきのオリジナル木札づくり（両日10:30）"],age:"小学生〜",t:"20分",f:["workshop","quiz","gift"]},
+ {n:"常滑市（愛知県）",g:"L-08",h:"東7ホール",a:"国内",r:"中部",m:"food",p:["#E7C7A0","#F7EAD9","#8C4A2F","#2F3A33"],c:"“やきもの散歩道”の町。常滑焼の急須で淹れるお茶と、炙りたての海苔。",e:["常滑焼の急須で淹れるお茶（呈茶体験）|X:https://x.com/tokonamekanko/status/2103066374201561308","炙りたての鬼崎のり|X:https://x.com/tokonamekanko/status/2103066374201561308"],gi:["招き猫トートバッグ|X:https://x.com/tokonamekanko/status/2103066374201561308","抽選で常滑焼が当たる|X:https://x.com/tokonamekanko/status/2103066374201561308"],d:["Aステージ 9/27 10:00 市長とトコタンの常滑観光クイズ（1万円商品券など）"],age:"全年齢",t:"15分",f:["food","gift","quiz"]},
+ {n:"北海道観光機構",g:"I-01",h:"東7ホール",a:"国内",r:"北海道（14地域・約40団体）",m:"mountain",p:["#9FCBE8","#E6F2FA","#3B6FA0","#F2B233"],c:"北海道といえば、やっぱり食。キャラクター「キュンちゃん」がブース中に登場。",e:["「HOKKAIDO LOVE! TASTING BAR」でワイン・日本酒など約30銘柄（時間ごとに地域が入れ替わり、20歳以上）|PR:https://prtimes.jp/main/html/rd/p/000000026.000078954.html","ステージでのウェルカムドリンク（数量限定）|PR:https://prtimes.jp/main/html/rd/p/000000026.000078954.html","小樽のお酒のふるまい|X:https://x.com/OtaruYoitoko/status/2103001486229664104"],gi:["スタンプラリーで人気の北海道土産|PR:https://prtimes.jp/main/html/rd/p/000000026.000078954.html","抽選：星野リゾート トマム ザ・タワーのペア宿泊（2組）、北海道グルメのカタログギフト（5名）|PR:https://prtimes.jp/main/html/rd/p/000000026.000078954.html","LINE抽選：キュンちゃん限定グッズ（タンブラー、トートバッグなど）|PR:https://prtimes.jp/main/html/rd/p/000000026.000078954.html","根室振興局コーナーのガラポン抽選・SNSフォローでグッズ|X:https://x.com/shiretokonemuro/status/2102669295750656394"],d:["キュンちゃんを探す・会う","キュンちゃんのぬいぐるみなどグッズ販売"],age:"全年齢（試飲は20歳以上）",t:"30〜45分",f:["food","rally","kids","gift"],u:"49481"},
+ {n:"ニセコ観光圏",g:"I-04",a:"国内",r:"北海道",m:"mountain",p:["#BFD9EC","#F1F7FB","#5C7FA3","#ffffff"],c:"羊蹄山をモチーフにした大型オブジェが目印。冬だけでなく四季のニセコを紹介。",e:[],gi:[],d:["ニセコの四季を体感するVR映像","ブース内を巡るシールラリー","リゾート事業者による最新情報"],age:"全年齢",t:"15〜20分",f:["vr","rally","kids"],u:"49842"},
+ {n:"福井県",g:"L-03",a:"国内",r:"北陸",m:"strata",p:["#E6D2AE","#F5EAD6","#8C6A43","#B98B55"],c:"テーマは「いいとこ、掘りだくさん。」。発掘現場に入り込んだようなパビリオン。",e:["購入額日本一、福井県民のソウルフード「油あげ」の実演・試食（無料）"],gi:["福井恐竜トレーディングカードラリー（無料）"],d:["恐竜・越前ガニになりきるオリジナルクラフト（無料）","入口で動く恐竜モニュメント（ヴェロキラプトル）がお出迎え|X:https://x.com/kokoro_dreams/status/2102929094036038001"],age:"全年齢（子ども◎）",t:"20〜30分",f:["kids","photo","food","workshop","rally"],u:"49440"},
+ {n:"東京 お台場（DMO TOKYO ODAIBA）",g:"K-05",a:"国内",r:"東京都",m:"sea",p:["#7FB9E6","#DDEEFA","#2A6FAF","#F28C38"],c:"一般日は親子向けイベントが連続。キャラクターが次々に来場します。",e:[],gi:["公式SNSフォローで豪華景品くじ（ホテルペア宿泊券、テーマパークチケット、アフタヌーンティー招待券など）"],d:["ソニック・ザ・ヘッジホッグ、アルバルク東京「ルーク」、ゆりかもめ「ゆりも」のグリーティング","レゴ®ブロックで「いぬ」をつくろう","みんなで宇宙センターをつくるワークショップ","ペーパークラフト「東京ポータ郎さん」（9/27）"],age:"全年齢（親子向け）",t:"30〜60分",f:["kids","workshop","gift"],u:"49670"},
+ {n:"東京都・東京観光財団",g:"K-04",h:"東7ホール",a:"国内",r:"東京都",m:"lantern",p:["#1F2C48","#3B4466","#141C30","#E8B84A"],c:"コンセプトは「江戸・東京 娯楽まつり」。都内の特産品と江戸の手仕事にふれる。",e:["浅草の老舗和菓子、多摩のワイン（20歳以上）、三宅島のお菓子など|PR:https://prtimes.jp/main/html/rd/p/000006892.000052467.html"],gi:[],d:["江戸手描提灯づくり（9/26 12:00・15:00、各12名、整理券制）","お香づくり「印香」「香袋」（9/27 12:00・14:30、各12名、整理券制）","八王子車人形の公演（9/26）、江戸里神楽のトーク（9/27）","ぺこぱ（9/26）、山崎怜奈（9/27）のトークショー（各13:00）"],age:"小学生〜",t:"30〜60分",f:["workshop","food","talk"],u:"49615"},
+ {n:"江戸川区",g:"K-19",a:"国内",r:"東京都",m:"leaf",p:["#D8E6C8","#F1F6EA","#4E7A3A","#C4412A"],c:"世界に一つだけの縁起物を手作り。",e:[],gi:[],d:["世界に一つだけのミニしめ縄飾りづくり（9/27）"],age:"小学生〜（2人1組）",t:"20〜30分",f:["workshop"]},
+ {n:"信越自然郷",g:"K-20",a:"国内",r:"長野・新潟",m:"mountain",p:["#C4DCC6","#EDF5EE","#3E6B4C","#F2B233"],c:"飯山・栄村など信越県境の9市町村。ゆるキャラが大集合。",e:["地域のワイン・日本酒などの試飲（20歳以上）","自転車で淹れるコーヒー体験（9/27）"],gi:["クイズラリー"],d:["Bステージ 9/26 10:40 ゆるキャラ大集合クイズ大会（上位10名に賞品）"],age:"全年齢",t:"20分",f:["food","quiz","kids"]},
+ {n:"埼玉県物産観光協会",g:"K-15",a:"国内",r:"関東",m:"food",p:["#F3C9A8","#FBEADB","#B5442E","#2F3A33"],c:"クレヨンしんちゃんの“地元”埼玉のグルメを紹介。",e:[],gi:["スマホの「埼玉グルメスタンプ」で『野原ひろし 昼メシの流儀』ノベルティ（9/27）"],d:[],age:"全年齢",t:"10分",f:["gift","rally"]},
+ {n:"クレヨンしんちゃん家族都市プロジェクト",g:"K-16",a:"国内",r:"秋田県・埼玉県・熊本県",m:"dance",p:["#FDE58A","#FFF6CF","#E2412E","#2D6BB3"],c:"しんちゃん（埼玉）、ひろし（秋田）、みさえ（熊本）の出身県が「家族都市」に。",e:[],gi:[],d:["しんちゃんグリーティング（9/26 11:00・15:30、9/27 11:00・14:00、各30分）","Bステージ 9/26 14:00 しんちゃん撮影会"],age:"全年齢（子ども◎）",t:"30分",f:["kids","photo"]},
+ {n:"秋田観光コンベンション協会",g:"J-06",a:"国内",r:"東北",m:"mountain",p:["#E7C9C0","#F7ECE8","#8E3B3B","#E0A626"],c:"公式SNSフォローで秋田の味を試飲。",e:["秋田県産りんごジュース（11:00）、ぶどうジュース（13:30）、地酒（15:30・17:00、20歳以上）。各回数量限定・SNSフォロー"],gi:["アンケート回答でハズレなしのガチャ（9/27終日）"],d:[],age:"全年齢（地酒は20歳以上）",t:"10分",f:["food","gift"]},
+ {n:"仙台市",g:"J-08",a:"国内",r:"東北",m:"castle",p:["#C9D3E6","#EEF1F7","#2B3F6B","#E0A626"],c:"伊達武将隊がおもてなし。こけしの絵付けは無料。",e:["クイズに答えて仙台名物「ずんだ餅」（9/27 12:30、先着200名）"],gi:["Instagram「せんだい旅日和」フォロー＆いいねで牛たん料理の割引券（9/27、先着500名）"],d:["こけしの絵付け（無料、各回4名、整理券制。9/26 13:30・15:30、9/27 11:00・13:30・15:15）","伊達武将隊のおもてなし"],age:"小学生〜",t:"30分",f:["workshop","food","gift","kids"]},
+ {n:"日本遺産",g:"Y-30",h:"東3ホール",a:"国内",r:"全国の日本遺産地域",m:"lantern",p:["#F2A65A","#FBDDB9","#A8452E","#F6D06B"],c:"縁日やお祭りをイメージしたブース。日本各地の日本遺産を旅する気分で巡れます。",e:[],gi:["SNS投稿などで参加できるガラガラ抽選（特賞は非売品の御周印帳）|X:https://x.com/gosyuuin_jp/status/2102294541613355031","尾道：SNSフォローで缶バッジ、アンケートでエコバッグ|X:https://x.com/nihonisanonomi1/status/2101116943805841763","国東半島：ご当地VTuber真玉珠音のステッカー|X:https://x.com/matama_tamane/status/2101548754872750572","日本遺産オリジナルノベルティ"],d:["各地域を学べる「日本遺産クイズラリー」","御周印帳の販売（各日30冊限定、会場限定の記念印）|X:https://x.com/gosyuuin_jp/status/2102294541613355031"],age:"小学生〜",t:"20〜30分",f:["quiz","kids","gift"],u:"49445"},
+ {n:"奈良県「豊臣兄弟！」観光推進協議会",g:"M-21",a:"国内",r:"奈良県",m:"castle",p:["#C9D6E0","#EEF2F5","#3A3F4F","#D8A13A"],c:"大河ドラマの舞台、豊臣秀長ゆかりの三城と長谷寺。戦国時代を体感できる演出が魅力。",e:["奈良県産の地酒のふるまい（20歳以上）"],gi:["ハズレなし抽選会（豊臣秀長関連商品、奈良県特産品）"],d:["甲冑・陣羽織・刀の着用体験と記念撮影（子どもOK）","戦国風の射的ゲーム（子どもOK）","Aステージ 9/27 13:00 長谷寺「声明」講演"],age:"全年齢（子ども◎）",t:"20〜30分",f:["kids","photo","gift","food"],u:"49543"},
+ {n:"奈良市",g:"M-20",a:"国内",r:"奈良県",m:"temple",p:["#E8D9B8","#F6EFDD","#7A5A2E","#C4412A"],c:"鹿の町・奈良のキャラクターに会える。",e:[],gi:["ガラポン大抽選会（両日11:00〜）"],d:["しかまろくんグリーティング（両日10:30）"],age:"全年齢",t:"15分",f:["kids","gift"]},
+ {n:"京和傘 日吉屋",g:"M-02",a:"国内",r:"京都",m:"fan",p:["#F1E0C8","#FAF3E8","#A8452E","#2F3A33"],c:"京都の老舗和傘店による、本格的なものづくり体験。",e:[],gi:[],d:["ミニ和傘の制作体験（5,000円税込。両日11:00・14:00・15:00など）"],age:"中学生〜",t:"60分前後",f:["workshop"]},
+ {n:"丹波篠山市",g:"M-19",a:"国内",r:"兵庫県",m:"food",p:["#D9C6A6","#F3ECDF","#6B4A2F","#C4412A"],c:"SNSで総再生数100万回以上という話題のガチャ。",e:[],gi:["丹波焼ガチャ"],d:[],age:"全年齢",t:"10分",f:["gift"]},
+ {n:"和歌山県観光連盟",g:"M-10",a:"国内",r:"和歌山県",m:"sea",p:["#8ED1C6","#E1F4F0","#2F8C7A","#F28C38"],c:"県内全エリアと鉄道・バス・宿泊事業者が集結。ブースを一周すれば和歌山旅の情報がそろう。",e:["那智黒（黒飴）、じゃばら果汁飴などのお菓子"],gi:["周遊スタンプラリーで抽選会・ノベルティ","熊野エリア：じゃばら商品などが当たるガチャ"],d:["鉄道の子ども用制服の着用体験","熊野エリア：串本の絶景VR、オリジナル缶バッジづくり","フォトスポット、ブース内ステージ"],age:"全年齢（子ども◎）",t:"20〜30分",f:["kids","rally","photo","gift","food","vr","workshop"],u:"49434"},
+ {n:"沖縄県",g:"S-12",a:"国内",r:"沖縄（23団体）",m:"palm",p:["#58C3D6","#D3F1F4","#1591A6","#F28C38"],c:"首里城正殿の復元、世界自然遺産登録5周年。花笠をモチーフにした沖縄エリア。",e:[],gi:["6ブースで押すと紅型（びんがた）柄が完成する「重ね捺しスタンプラリー」|PR:https://ryukyushimpo.jp/prtimes/entry-5516933.html"],d:["エイサー・空手・国王王妃撮影会などのブースステージ","フォトスポット、観光案内","Aステージ 9/26 16:10 空手、Bステージ 9/27 15:30 首里城トーク（ガレッジセール）"],age:"全年齢",t:"30分",f:["rally","photo","kids","gift"],u:"49432"},
+ {n:"うるま市（沖縄県）",g:"S-20",h:"東8ホール",a:"国内",r:"沖縄",m:"sea",p:["#7FD0D9","#DDF3F5","#1D7F8C","#E0A626"],c:"闘牛の町・うるま市。",e:[],gi:["LINE登録でハズレなし抽選会（うるうららのナップザック）|X:https://x.com/urumakankou/status/2100791798176399541"],d:["闘牛フォトスポット、闘牛の生実況|X:https://x.com/urumakankou/status/2100791798176399541"],age:"全年齢",t:"10分",f:["photo","gift"]},
+ {n:"奄美群島観光物産協会",g:"Q-05",a:"国内",r:"鹿児島県",m:"sea",p:["#6CC9D2","#D9F2F4","#1A7F8A","#F2B233"],c:"奄美大島、与論島、沖永良部島、徳之島。島ごとの体験が並びます。",e:[],gi:["奄美大島の特産品つかみ取り（9/26 11:00・14:00、9/27 12:20・16:00）","特産品の抽選、沖永良部島・徳之島クイズ"],d:["与論島の星砂探し（9/26 11:40・14:40、9/27 11:40・15:20）","奄美市公式キャラクター「コクト君」と撮影"],age:"全年齢（子ども◎）",t:"20〜30分",f:["kids","gift","quiz"]},
+ {n:"東北観光推進機構・JR東日本",g:"J-01",a:"国内",r:"東北6県・新潟県",m:"train",p:["#BFE0C8","#EEF7F0","#3F7A52","#2E7D32"],c:"テーマは「すぐそこにある 東北のおもしろいに会いに行こう！」。",e:["「東北セレクション」厳選した東北・新潟の地酒（20歳以上）と絶品アイス（両日10:30〜）"],gi:["TOHOKU FAN Club入会でガチャガチャの景品"],d:["JR駅長制服の着用体験","東北・新潟の祭り衣装・伝統衣装体験","東北6県＋新潟の伝統工芸品ワークショップ（両日10:30〜）","JR東日本“空飛ぶクルマ”の紹介、JR東日本マルシェの物販"],age:"全年齢（子ども◎）",t:"30〜45分",f:["kids","photo","food","gift","workshop"],u:"50026"},
+ {n:"愛知県",g:"L-14",a:"国内",r:"中部",m:"castle",p:["#F3D08A","#FBF0D6","#2F3B5C","#C4412A"],c:"信長・秀吉・家康を生んだ「武将のふるさと」。ものづくり王国の産業観光も。",e:[],gi:["参加者に愛知県オリジナルノベルティ"],d:["武将隊・忍者隊・ご当地キャラのグリーティング","伝統工芸の家紋刷り体験","サイコロゲーム、クイズラリー","Aステージ 9/27 10:40 武将隊・忍者隊ステージ"],age:"全年齢（子ども◎）",t:"20〜30分",f:["kids","workshop","quiz","gift"],u:"49835"},
+ {n:"岐阜県",g:"L-04",a:"国内",r:"中部",m:"mountain",p:["#BCD7B0","#EAF3E4","#3E6B3A","#F2B233"],c:"「楽しすぎるぞ岐阜！」アウトドア観光キャンペーン中。NEXCO中日本の「みちまるくん」も来場。",e:[],gi:["クイズスタンプラリー「たのしすぎるぞ岐阜！」","冊子「岐阜アウトドアWalker」配布"],d:["アウトドア体験コーナー","Aステージ 9/27 11:20 さばいどる かほなん"],age:"全年齢",t:"15〜20分",f:["quiz","rally","gift"]},
+ {n:"南砺市・松本市ほか",g:"L-02",a:"国内",r:"北陸・信州",m:"leaf",p:["#CFE0C3","#F1F6EC","#5D7F45","#A0733F"],c:"日本一の木彫りの町・井波と五箇山和紙、松本の手まり。手仕事を持ち帰れるブース。",e:["クイズラリーで南砺の試食・試飲"],gi:["特産品入りの「南砺ガチャ」（数量限定販売）"],d:["井波彫刻の木片で作る香り袋「マイ・サシェ」（有料）","五箇山和紙の缶バッジづくり","松本市：初めてのてまり作り（9/26 15:00、9/27 11:20）"],age:"小学生〜",t:"30〜45分",f:["workshop","food","quiz"],u:"49787"},
+ {n:"鯖江市",g:"L-05",a:"国内",r:"北陸",m:"craft",p:["#DCE6F0","#F3F7FA","#2F4E7A","#C4412A"],c:"眼鏡と漆器の町・鯖江。",e:[],gi:[],d:["プチ絵付け体験（両日11:00〜）"],age:"小学生〜",t:"20〜30分",f:["workshop"]},
+ {n:"石川県",g:"L-10",a:"国内",r:"北陸",m:"lantern",p:["#23304F","#3A4A70","#1A2440","#F2D38A"],c:"コンセプトは「いしかわ、想像以上」。巨大な行灯風タワーと兼六園の雪吊りフォトスポット。",e:["甘エビ、サワラ、地元のお菓子","日本酒・どぶろく（20歳以上）"],gi:["石川県観光連盟のSNSフォローでガラポン抽選|X:https://x.com/wajimakankou/status/2100906788946362415","ガチャガチャ、アンケート・クイズ正解でオリジナルグッズ"],d:["漁業VR体験・セリ見学の紹介","白山クイズ","ひゃくまんさんのグリーティング（9/26・27）"],age:"全年齢",t:"30分",f:["vr","food","photo","gift","kids","quiz"],u:"49453"},
+ {n:"九州",g:"Q-01",a:"国内",r:"九州7県",m:"food",p:["#F2C79A","#FBEBD9","#8D5A3B","#C4412A"],c:"今年のテーマは「Café」。地元民が選んだ銘菓とドリンクを県ごとに提供。",e:["九州各県の「銘菓＋ドリンク」セット（一般日・数量限定）","大分：名産かぼすの香りを楽しむ「追いかぼす」","宮崎：「バー ミヤザキ」","久留米：酒どころ久留米のお酒飲みくらべ（開場後にブースで整理券・人数限定、20歳以上）|X:https://x.com/welcome_kurume/status/2102884462933488069"],gi:["福岡：ガチャ抽選","大分：Instagramフォローキャンペーン（由布院温泉郷など）","久留米：Xフォローで「くるめんべい」|X:https://x.com/welcome_kurume/status/2102884462933488069"],d:["宮崎：鵜戸神宮の「運玉投げ」の模擬体験","宮崎：高校生の民謡披露（9/26 13:00）","福岡県特別体験プログラム（両日11:00〜）"],age:"全年齢（お酒は20歳以上）",t:"30〜45分",f:["food","gift","workshop"],u:"49714"},
+ {n:"熊本県",g:"Q-01",a:"国内",r:"九州",m:"castle",p:["#EAD9A8","#F7F0DC","#2B2B2B","#C4412A"],c:"熊本デスティネーションキャンペーン開催中。くまモンも遊びに来ます。",e:[],gi:[],d:["くまモンイベント","応援動画メッセージ撮影コーナー","出張！銀座熊本館（名産品の販売）"],age:"全年齢（子ども◎）",t:"20分",f:["kids","photo"],u:"49663"},
+ {n:"環境省 日本の国立公園",g:"Y-37",a:"国内",r:"全国の国立公園",m:"forest",p:["#A7D3B3","#E6F3E9","#2F6B45","#F2C14E"],c:"「その自然には、物語がある。」現地を知るレンジャーから直接話が聞けます。",e:[],gi:[],d:["レンジャー等による国立公園トークショー","国立公園を楽しむ体験型ワークショップ","9/26・27、約30分ごとに開催予定"],age:"小学生〜",t:"30分",f:["workshop","talk","kids"],u:"49771"},
+ {n:"広島県",g:"N-02",h:"東8ホール",a:"国内",r:"中国地方",m:"sea",p:["#9CC9E6","#E3F0F8","#2C6A9A","#C4412A"],c:"原爆ドームと嚴島神社の世界遺産登録30周年。県内市町がオール広島で出展。",e:["東7ホールのキッチンカーで名物「コウネ焼き」「コウネバーガー」"],gi:["「みつける広島県スタンプラリー」4つで抽選。参加賞はハシビリョコウ×ひろくまのコラボ缶バッジ","はつかいち宮島：けん玉チャレンジで豪華景品","広島市コーナー：SNSフォローでノベルティ、投稿のいいね＆リポストでプレゼント（数量限定）|X:https://x.com/hironavitweet/status/2100904554389016608"],d:["けん玉チャレンジ","ゆるキャラ大集合ステージ（ひろくまも）","未来へつなぐメッセージ企画"],age:"全年齢（子ども◎）",t:"30分",f:["rally","kids","quiz","food","gift"],u:"49537"},
+ {n:"山口ゆめ回廊",g:"N-03",a:"国内",r:"中国地方",m:"mountain",p:["#D6C8E6","#F2EDF7","#5B3F86","#E0A626"],c:"山口県西部7市町の周遊エリア。",e:["7市町の地酒（両日10:30〜、各回数量限定、20歳以上）"],gi:["簡単アンケートでノベルティ（先着順）"],d:[],age:"大人向け",t:"10分",f:["food","gift"]},
+ {n:"土佐市（高知県）",g:"P-02",a:"国内",r:"四国",m:"sea",p:["#8EC5E0","#E0F0F7","#1F5E8C","#C4412A"],c:"大河ドラマ決定を祝う土佐市のふるまい。",e:["土佐市の「極上日本酒」（20歳以上）","削りたての鰹節"],gi:[],d:["鰹節を削る体験"],age:"全年齢（日本酒は20歳以上）",t:"10分",f:["food","workshop"]},
+ // TEJコレクション
+ {n:"クルーズバケーション",g:"TC1-15",a:"TEJコレクション",r:"クルーズ",m:"ship",p:["#7EC3E6","#DDF0F9","#1D5E8C","#E94B3C"],c:"2026年3月デビューのシンガポール発着「ディズニー・アドベンチャー」を紹介。",e:[],gi:["東京湾クルーズ無料券、クルーズ会社の限定グッズが当たる抽選会","会期中にディズニー・アドベンチャーを予約するとオンボードクレジット200ドル分（来場者の投稿より）|X:https://x.com/join_in/status/2103056601540419675"],d:["キャラクターとクルーズの超大型イラストで記念撮影","5つ星「ハパグロイド・クルーズ」の展示"],age:"全年齢",t:"15分",f:["photo","gift","kids"],u:"49833"},
+ {n:"酒蔵ツーリズム",g:"TC2-07",h:"東3ホール",a:"TEJコレクション",r:"ガストロノミーツーリズム",m:"wine",p:["#E9E2D0","#F7F3EA","#6B4A2F","#3E6B8C"],c:"KURABITO STAY（長野）、佐々木酒造（京都）、笹祝酒造（新潟）、日本地酒協同組合が参加。",e:["蔵人によるPRと日本酒の試飲（1日5〜6回、日替わりの蔵元、20歳以上）|PR:https://prtimes.jp/main/html/rd/p/000000133.000059941.html"],gi:["全国の酒蔵のパンフレット"],d:["酒蔵に泊まる旅、蔵見学の相談"],age:"20歳以上",t:"20分",f:["food","talk"]},
+ {n:"東洋大学 国際観光学部",g:"TC1-22",a:"TEJコレクション",r:"アカデミー",m:"city",p:["#F6D7A7","#FCF0DC","#2B4C7E","#C4412A"],c:"2024年ブースグランプリ実行委員長賞。学生の研究から生まれた旅の提案を30分1コマで。",e:["日本のお菓子と台湾茶（9/26 11:40・12:20）"],gi:["豪華商品が当たるクイズ大会「Think fast, Win big」（9/26 13:00・14:30）"],d:["地域の魅力・新しい旅の学生プレゼン"],age:"中学生〜",t:"30分",f:["quiz","food","talk","gift"],u:"49731"},
+ {n:"帝京大学 観光経営学科",g:"TC1-24",a:"TEJコレクション",r:"アカデミー",m:"leaf",p:["#D6E4F0","#F2F7FB","#28507A","#E26B3A"],c:"地域創生・DX・AIまで、ゼミ研究を教員と学生が説明。観光を学びたい高校生にも。",e:[],gi:["先着100名に帝京大学オリジナルトートバッグ"],d:["マスコット「てぃーぼー」の人形と撮影"],age:"高校生〜",t:"15分",f:["gift","talk"],u:"49539"},
+ {n:"SAMURAI TOUCH",g:"TC1-04",a:"TEJコレクション",r:"ウェルネスツーリズム",m:"fan",p:["#2E2A26","#4A3F35","#8E2F2A","#C9A45C"],c:"ニューヨークで行列を作った体験が国内初登場。畳・提灯・陣幕の和空間でフットケア。",e:[],gi:["体験者全員に「オリジナル切り絵御朱印」"],d:["理学療法士による7分間のフットケア"],age:"大人向け",t:"7分＋待ち時間",f:["gift"],u:"49698"},
+ {n:"カネカ",g:"TC2-01",a:"TEJコレクション",r:"旅行関連",m:"leaf",p:["#CDE6DD","#EFF7F3","#2F7A5F","#F2B233"],c:"旅を楽しむ脚力をチェック。体組成計で脚の筋肉量を無料測定。",e:[],gi:["その場で商品注文＋LINE登録で筋肉ケアサプリ14日分"],d:["脚の筋肉量の測定（結果シートを進呈）"],age:"大人向け",t:"10分",f:["gift"],u:"49653"},
+ {n:"商船三井グループ",g:"TC1-21",a:"TEJコレクション",r:"クルーズ",m:"ship",p:["#9CC9E6","#E3F0F8","#16375E","#E94B3C"],c:"さんふらわあのフェリーから、新造船「MITSUI OCEAN SAKURA」のクルーズまで。",e:[],gi:[],d:["フェリー・クルーズ船内のVR体験"],age:"全年齢",t:"10分",f:["vr"]},
+ {n:"東北・食と暮らしの旅",g:"TC1-43",a:"TEJコレクション",r:"ガストロノミーツーリズム",m:"food",p:["#E7D3B0","#F7EEDD","#7A5230","#4F7F3A"],c:"郷土料理づくりや職人の手仕事など、地域の暮らしに入り込む少人数の旅。",e:[],gi:["アンケート回答で先着200名に東北の風景ポストカード"],d:["農泊体験・ツアー紹介のショートプレゼン（1日4回・20分）","一部ツアーはその場で申し込み可"],age:"大人向け",t:"20分",f:["talk","gift"],u:"49668"},
+ {n:"日米観光交流促進キャンペーン2026",g:"TP-05",a:"旅行関連",r:"アメリカ",m:"city",p:["#C8D8F0","#EDF2FA","#1F3F7A","#C8342E"],c:"セサミストリートのエルモに会える。グランドキャニオン風のフォトブースも。",e:[],gi:["アンケート回答でチケットホルダー（数量限定）","クイズラリーでアメリカのお菓子（数量限定）"],d:["エルモとの撮影会（両日11:30・13:30・15:30。混雑時は受付終了あり）","グランドキャニオン風フォトブース、親子のペーパークラフト|PR:https://micetimes.jp/pre-tej2026/"],age:"全年齢（子ども◎）",t:"20〜30分",f:["kids","photo","gift","quiz"]},
+ // 旅行関連
+ {n:"ANA（全日本空輸）",g:"W-04",a:"旅行関連",r:"航空",m:"plane",p:["#1B4F9C","#6FA6DB","#0D2F66","#8ED1F2"],c:"ラウンジ、シート、機内食まで、ビジネスクラスの搭乗体験をApple Vision Proで再現。",e:[],gi:["プレゼントが当たる参加型イベント"],d:["Apple Vision Proで機内のおもてなしを体験する没入型コンテンツ|X:https://x.com/t_expo/status/2100494968267866287","お子さま向けワークショップ","Bステージ 9/26 13:20 ANA直行便で行くスウェーデン"],age:"全年齢",t:"20〜30分",f:["vr","kids","workshop","gift"],u:"49450"},
+ {n:"JAL（日本航空）",g:"W-01",a:"旅行関連",r:"航空",m:"plane",p:["#C8102E","#F07D8A","#7E0A1C","#FFFFFF"],c:"テーマは「あなたの“好き”に、翼を。」。ホノルルマラソンを走るランニングマシン企画も。",e:[],gi:["ブース来場者に「好き」を応援するノベルティ","東京ディズニーシー25周年記念「ジュビリーエクスプレス」のシール（来場者の投稿、9/24時点）|X:https://x.com/join_in/status/2102996451563606463","ファンミーティングのクイズでオリジナルグッズ（9/26 13:00、9/27 13:00・13:30）"],d:["最新機材A350-1000の雰囲気をVRで疑似体験","ランニングマシンでフルマラソンの距離に挑む「ホノルルマラソン」再現","マイルタイプ診断|X:https://x.com/t_expo/status/2100857362110459937"],age:"全年齢",t:"20〜30分",f:["vr","quiz","gift","kids"],u:"49808"},
+ {n:"スターラックス航空",g:"W-02",a:"旅行関連",r:"航空（台湾）",m:"plane",p:["#1E2233","#3A3F58","#B89B6A","#E7D3A8"],c:"10月1日から対象便で提供する新しい機内アイテムを公開。",e:[],gi:["フォトブースで撮って投稿するとオリジナル缶バッジ（数量限定）"],d:["新しい機内アイテムの展示|X:https://x.com/starluxjapan/status/2100419529713303682"],age:"全年齢",t:"10分",f:["photo","gift"]},
+ {n:"スカイマーク",g:"要確認",a:"旅行関連",r:"航空",m:"plane",p:["#3FA9E0","#CDEBF8","#1B5E8C","#F2B233"],c:"新しい翼「ボーイング737-8」を紹介。",e:[],gi:["アンケート回答で航空券やモデルプレーンなどが抽選で当たる|X:https://x.com/SkymarkJ/status/2103034030245704103"],d:[],age:"全年齢",t:"10分",f:["gift"]},
+ {n:"JTB",g:"X-06",a:"旅行関連",r:"旅行会社",m:"dance",p:["#16284B","#274A7C","#E94B3C","#F2B233"],c:"テーマは「THE TRAVEL INTERACTION HUB」。正面の巨大LEDビジョンが目印。",e:[],gi:["豪華賞品の抽選会（Refeelaのポケッタブルバッグ、ラグビーワールドカップのステッカーなど）"],d:["バーチャル世界でくまモンに出会う「くまもんダンジョン」（一般日）","九州クイズ大会（9/26 11:30、9/27 13:30）","ブース内ステージ：宇宙旅行、ヨーロッパ、やんばる、フェンシング松山恭助トークなど"],age:"全年齢（子ども◎）",t:"20〜40分",f:["kids","gift","quiz","talk"],u:"49479"},
+ {n:"JR東海ツアーズ",g:"X-03",a:"旅行関連",r:"旅行会社",m:"train",p:["#E8F1F8","#FFFFFF","#9FB4C8","#1F5FAF"],c:"新幹線とホテルのセット「EX旅パック」でおなじみ。制服体験のフォトブースも。",e:[],gi:["旅のクイズラリー「コスパ旅クエスト」参加賞：新幹線柄マスキングテープ（なくなり次第終了）"],d:["JR東海の制服体験フォトブース","竹渕慶さん・おかのやともかさんのトーク＆ミニライブ","旅好きインフルエンサーのトーク"],age:"全年齢（子ども◎）",t:"20分",f:["kids","photo","quiz","gift"],u:"49713"},
+ {n:"近畿日本ツーリスト・クラブツーリズム",g:"X-14",h:"東3ホール",a:"旅行関連",r:"旅行会社",m:"dance",p:["#F4E2B8","#FBF3E0","#E26B3A","#2B6CB0"],c:"2027年4月の統合を前に、旅と旅以外の新サービスを紹介。",e:[],gi:["デジタルスタンプラリー→ドームエアー抽選くじ（2万円分の旅行券「フリーセレクション」、オリジナルノベルティ）|PR:https://prtimes.jp/main/html/rd/p/000001424.000001864.html"],d:["公式SNSフォローでキャラクター「くまぶー」と記念撮影","バスケットボールのシュートフォームをAIで指導する体験","ブース内ステージ：エジプト、クルーズ、フェルメール、ひとり旅など"],age:"小学生〜",t:"20〜30分",f:["kids","rally","photo","gift"],u:"49724"},
+ {n:"日本旅行",g:"X-07",h:"東2ホール",a:"旅行関連",r:"旅行会社",m:"plane",p:["#D8E8F4","#F2F7FB","#C8342E","#1F4E79"],c:"山口・広島・岡山の旅を香りと方言で。隣には宇宙船の模型も。",e:["山口・広島・岡山の地酒の試飲コーナー（20歳以上）|PR:https://prtimes.jp/main/html/rd/p/000001018.000004858.html"],gi:["オリジナルグッズのカプセルトイ|PR:https://prtimes.jp/main/html/rd/p/000001018.000004858.html","SNSフォローで旅行券やグッズが当たる抽選会|PR:https://prtimes.jp/main/html/rd/p/000001018.000004858.html"],d:["山口・広島・岡山エリアの香り体験・方言クイズ|PR:https://prtimes.jp/main/html/rd/p/000001018.000004858.html","宇宙船模型（ASCA）を展示するGALAXY PROJECT|PR:https://prtimes.jp/main/html/rd/p/000001018.000004858.html"],age:"全年齢",t:"20分",f:["food","gift","quiz"]},
+ {n:"読売旅行",g:"X-12",a:"旅行関連",r:"旅行会社",m:"craft",p:["#F7E3B5","#FDF5E3","#C4412A","#2B6CB0"],c:"子ども向けプログラム「よみうりKoDoMoわんぱクラブ」をプチ体験。",e:[],gi:["わくわく宝探し抽選会|X:https://x.com/yomiuriryokou/status/2100494974005485645"],d:["ブンブンゴマづくり（両日11:00）","ハーブのサシェづくり（9/26 13:00）","竹のお箸づくり（9/27 13:00）"],age:"小学生（親子）",t:"30分",f:["kids","workshop","gift"]},
+ {n:"Trip.com",g:"X-01",a:"旅行関連",r:"OTA",m:"plane",p:["#2E7CF6","#8CB9FB","#0E4DB8","#FFD34E"],c:"見て・遊んで・体験できるブース。ガチャやスロットで賞品が当たる。",e:[],gi:["ガチャ・おみくじ・ラッキースロットで賞品（スロットは両日12:00・15:00）","ステッカーなどのノベルティ","AIデモ・クイズセッションの参加賞"],d:["AIアシスタント「TripGenie」のデモ（9/26 11:10）","高橋成美さんトークショーほか"],age:"小学生〜",t:"20分",f:["gift","quiz","talk"],u:"49485"},
+ {n:"エバー航空",g:"G-16",h:"東2ホール",a:"旅行関連",r:"航空",m:"plane",p:["#1D6B4F","#6FB39A","#0F3F2E","#F2B233"],c:"昨年好評のイマーシブコンテンツ「EVA TOURS」がパワーアップ。",e:[],gi:["体験者に抽選で豪華景品","ノベルティ"],d:["行きたい就航都市を選んで没入体験"],age:"全年齢",t:"10〜15分",f:["vr","gift"],u:"49737"},
+ {n:"阪急交通社",g:"X-05",a:"旅行関連",r:"旅行会社",m:"balloon",p:["#9FC7E8","#E4F0FA","#5A8A5A","#F2B233"],c:"一般日はVRゴーグルでバーチャル海外旅行。添乗員の解説つき。",e:[],gi:["ハズレなしの巨大ガチャ抽選会（1等スーツケース。公式LINE登録で参加）"],d:["VRで海外旅行（添乗員解説つき、両日12:30〜）","YouTuber「かほの登山日記」かほさん登場（両日10:30）"],age:"小学生〜",t:"15〜20分",f:["vr","gift","talk"],u:"49449"},
+ {n:"DISCOVER WEST（中国5県・JR西日本）",g:"N-07",a:"旅行関連",r:"岡山・広島・山口・鳥取・島根",m:"mountain",p:["#F4C58E","#FBE6CC","#7A6A9C","#E26B3A"],c:"中国地方5県の観光を五感で楽しむ体験型ブース。",e:[],gi:["クイズラリーで特産品が当たる抽選会","各県のパンフレット・ノベルティ"],d:["ご当地キャラ登場（ももっち、ひろくま、ちょるる、トリピー、しまねっこ）※26・27日"],age:"全年齢（子ども◎）",t:"15〜20分",f:["kids","quiz","gift"],u:"49417"},
+ {n:"海があるから（国土交通省）",g:"Y-14",h:"東3ホール",a:"旅行関連",r:"フェリー・離島",m:"ship",p:["#6FB6DE","#D6EDF8","#1A5A8A","#F2B233"],c:"フェリー旅と離島の魅力。御船印（ごせんいん）参加社が大集合。",e:[],gi:["乗船券や各地のお土産が当たる抽選会|X:https://x.com/c2_sea_project/status/2100083405597892739"],d:["ジャンボフェリーのミニステージ（9/27 14:00）|X:https://x.com/jumbo_ferry/status/2102956193178415120"],age:"全年齢",t:"15分",f:["gift"]},
+ {n:"GREEN×EXPO 2027",g:"K-03",a:"旅行関連",r:"横浜・国際園芸博覧会",m:"leaf",p:["#BDE3C4","#EDF7EF","#2E8B57","#F28C38"],c:"2027年3月19日から横浜・上瀬谷で開催。入場日時予約の相談もここで。",e:[],gi:["公式パンフレット、入場日時予約の案内チラシ"],d:["キャラクター「トゥンクトゥンク」が来場（9/26午前）","Bステージ 9/26 14:40 トゥンクトゥンクがやってくる！"],age:"全年齢",t:"10分",f:["kids","gift"],u:"49429"}
+];
+const FEAT = {fav:"★ お気に入りのみ",kids:"子ども連れ◎",food:"試食・試飲",workshop:"ワークショップ",photo:"写真映え",vr:"VR・没入体験",rally:"スタンプラリー",quiz:"クイズ",gift:"プレゼント・抽選",talk:"トーク"};
+const AREAS = ["すべて","海外","国内","TEJコレクション","旅行関連"];
+
+/* 会場全体（ブース外）のもらえる・当たる */
+const EXTRA_GIFTS = [
+ ["フードコート","JCB","フードコートでJCBカードを使うと先着でノベルティ|X:https://x.com/JCB_BRAND/status/2103046787875393723"],
+ ["要確認","大阪観光局","豪華景品が当たるスタンプラリー・抽選会（日本酒・ワインの試飲・販売も）|X:https://x.com/Osaka_Tabilog/status/2100494979798077785"],
+ ["要確認","山梨市","公式SNSフォローでオリジナルグッズ、9/26・27は試食ぶどうを配布|X:https://x.com/yamanashikanko/status/2103041271057326561"],
+ ["要確認","ヴィアインホテルズ（JR西日本）","全国のヴィアインで使えるペア無料宿泊券、オリジナルグッズの抽選|X:https://x.com/viainn_hotels/status/2103031685944311923"]
+];
+
+/* ブース内イベント（一般日）[日, 時刻, GATE, 出展者, 内容, 注記] */
+const EV = [
+ ["26","10:00","L-15","三重県","みえ旅クイズラリー＆ガラガラ抽選会（1等ホテル宿泊券）","終日"],
+ ["26","10:00","X-06","JTB","くまもんダンジョン体験コーナー","終日"],
+ ["26","10:00","X-05","阪急交通社","ハズレなし！巨大ガチャ抽選会","終日・LINE登録"],
+ ["26","10:00","TP-05","日米観光交流","アンケートでチケットホルダー／クイズラリーでアメリカのお菓子","数量限定"],
+ ["26","10:00","M-10","和歌山（熊野）","串本の絶景VR、缶バッジづくり、じゃばら商品ガチャ",""],
+ ["26","10:00","Q-01","宮崎県","バー ミヤザキ、鵜戸神宮の運玉投げ模擬体験",""],
+ ["26","10:00","P-02","土佐市","極上日本酒の試飲＆削りたて鰹節","20歳以上"],
+ ["26","10:30","J-01","東北・JR東日本","伝統工芸品ワークショップ／地酒と絶品アイス",""],
+ ["26","10:30","L-15","尾鷲市","尾鷲ひのきのオリジナル木札づくり",""],
+ ["26","10:30","M-20","奈良市","しかまろくんグリーティング",""],
+ ["26","10:30","N-03","山口ゆめ回廊","7市町の地酒試飲","各回数量限定"],
+ ["26","10:30","G-12","中国","拓本体験",""],
+ ["26","10:30","X-05","阪急交通社","YouTuber かほさん登場",""],
+ ["26","10:40","K-05","お台場","ソニック・ザ・ヘッジホッグに会おう！",""],
+ ["26","11:00","D-19","ポルトガル","イワシの缶詰パッキングワークショップ",""],
+ ["26","11:00","H-08","タヒチ","ポリネシアン・タトゥー風ボディペイント",""],
+ ["26","11:00","J-06","秋田","秋田県産りんごジュース試飲","SNSフォロー・数量限定"],
+ ["26","11:00","K-05","お台場","レゴ®ブロックで「いぬ」をつくろう",""],
+ ["26","11:00","K-16","クレヨンしんちゃん","しんちゃんグリーティング（〜11:30）",""],
+ ["26","11:00","L-05","鯖江市","プチ絵付け体験",""],
+ ["26","11:00","M-20","奈良市","ガラポン大抽選会",""],
+ ["26","11:00","Q-05","奄美群島","奄美大島 特産品つかみ取り",""],
+ ["26","11:00","X-12","読売旅行","ブンブンゴマづくり",""],
+ ["26","11:00","M-02","京和傘 日吉屋","ミニ和傘の制作体験","5,000円"],
+ ["26","11:10","X-01","Trip.com","AIアシスタント「TripGenie」デモ",""],
+ ["26","11:30","G-12","中国","蓮の花の香袋づくり",""],
+ ["26","11:30","G-35","ソウル","Day & Night ルーレット／限定ポスター配布",""],
+ ["26","11:30","K-04","東京都","八王子車人形の公演",""],
+ ["26","11:30","TP-05","日米観光交流","セサミストリート「エルモ」撮影会","混雑時は受付終了"],
+ ["26","11:30","X-06","JTB","九州クイズ大会",""],
+ ["26","11:40","Q-05","奄美群島","与論島 星砂探し",""],
+ ["26","11:40","TC1-22","東洋大学","日本のお菓子と台湾茶の試飲",""],
+ ["26","12:00","C-07","南アフリカ","ドラムカフェのミニライブ",""],
+ ["26","12:00","K-04","東京都","江戸手描提灯づくり①","12名・整理券10:00〜"],
+ ["26","12:00","K-12","向島花街","芸妓とのフォトセッション・お座敷遊び（〜14時頃）",""],
+ ["26","12:00","X-01","Trip.com","ラッキースロット",""],
+ ["26","12:20","TC1-22","東洋大学","日本のお菓子と台湾茶の試飲",""],
+ ["26","12:30","X-05","阪急交通社","添乗員が案内するバーチャル世界旅行",""],
+ ["26","12:30","Y-10","ソニックフロー","向島芸者の舞と三味線",""],
+ ["26","13:00","G-35","ソウル","K-POPカバーダンス",""],
+ ["26","13:00","H-08","タヒチ","タヒチ特産パイナップルジュース試飲",""],
+ ["26","13:00","K-04","東京都","ぺこぱトークショー",""],
+ ["26","13:00","N-01","鳥取県","とっとりガチャ",""],
+ ["26","13:00","Q-01","宮崎県","高校生による民謡披露",""],
+ ["26","13:00","TC1-22","東洋大学","クイズ大会（豪華商品）",""],
+ ["26","13:00","X-12","読売旅行","ハーブのサシェづくり",""],
+ ["26","13:00","Y-38","さとらんど（札幌）","アンケートでじゃがいも「アンデスレッド」",""],
+ ["26","13:20","K-05","お台場","ソニック・ザ・ヘッジホッグに会おう！",""],
+ ["26","13:30","G-12","中国","中秋のミニランタンづくり",""],
+ ["26","13:30","G-35","ソウル","限定ポスター配布",""],
+ ["26","13:30","J-06","秋田","秋田県産ぶどうジュース試飲","SNSフォロー・数量限定"],
+ ["26","13:30","J-08","仙台市","こけしの絵付け①","無料・4名・整理券"],
+ ["26","13:30","TP-05","日米観光交流","エルモ撮影会","混雑時は受付終了"],
+ ["26","13:45","K-05","お台場","宇宙センターをつくろう！ワークショップ",""],
+ ["26","14:00","K-25","草津温泉","ゆもみちゃんグリーティング",""],
+ ["26","14:00","M-02","京和傘 日吉屋","ミニ和傘の制作体験","5,000円"],
+ ["26","14:00","Q-05","奄美群島","奄美大島 特産品つかみ取り",""],
+ ["26","14:30","D-19","ポルトガル","ファドギターの演奏",""],
+ ["26","14:30","G-12","中国","螺鈿細工アクセサリーづくり",""],
+ ["26","14:30","G-35","ソウル","韓国語ネームキーホルダーづくり",""],
+ ["26","14:30","K-05","お台場","レゴ®ブロックで「いぬ」をつくろう",""],
+ ["26","14:30","TC1-22","東洋大学","クイズ大会（豪華商品）",""],
+ ["26","14:40","Q-05","奄美群島","与論島 星砂探し",""],
+ ["26","15:00","D-19","ポルトガル","おやつの時間：パステル・デ・ナタ",""],
+ ["26","15:00","H-08","タヒチ","タヒチ産ワインのセミナー＆試飲","20歳以上"],
+ ["26","15:00","K-04","東京都","江戸手描提灯づくり②","12名・整理券14:30〜"],
+ ["26","15:00","L-02","松本市","初めてのてまり作り",""],
+ ["26","15:00","Q-01","大分県","名産かぼすの「追いかぼす」体験",""],
+ ["26","15:00","X-01","Trip.com","ラッキースロット",""],
+ ["26","15:30","G-12","中国","拓本体験",""],
+ ["26","15:30","J-06","秋田","地酒試飲","SNSフォロー・数量限定・20歳以上"],
+ ["26","15:30","J-08","仙台市","こけしの絵付け②","無料・4名・整理券"],
+ ["26","15:30","K-16","クレヨンしんちゃん","しんちゃんグリーティング（〜16:00）",""],
+ ["26","15:30","TP-05","日米観光交流","エルモ撮影会","混雑時は受付終了"],
+ ["26","16:00","D-19","ポルトガル","ワインセミナー＆試飲会","20歳以上"],
+ ["26","16:00","K-05","お台場","アルバルク東京「ルーク」に会おう！",""],
+ ["26","16:00","Q-05","奄美群島","奄美市キャラクター「コクト君」登場",""],
+ ["26","16:30","G-12","中国","金箔扇子づくり",""],
+ ["26","17:00","J-06","秋田","地酒試飲","SNSフォロー・数量限定・20歳以上"],
+ ["26","17:00","K-05","お台場","アルバルク東京「ルーク」に会おう！",""],
+ ["27","10:00","C-07","南アフリカ","アフリカン柄ヘアゴム・ビーズブレスレットづくり、ラグビー体験ゲーム",""],
+ ["27","10:00","G-05","チャイナエアライン","ジャイアントフラワーの撮影スポット",""],
+ ["27","10:00","G-12","中国","螺鈿細工アクセサリー、貴州省の民族衣装試着、VR",""],
+ ["27","10:00","G-17","新竹市（台湾）","肉団子スープの手作り体験",""],
+ ["27","10:00","J-01","東北・JR東日本","東北・新潟の伝統衣装体験",""],
+ ["27","10:00","J-06","秋田","アンケートでハズレなしガチャ","終日"],
+ ["27","10:00","J-08","仙台市","Instagramフォロー＆いいねで牛たん料理割引券","先着500名"],
+ ["27","10:00","K-15","埼玉県","埼玉グルメスタンプで『野原ひろし 昼メシの流儀』ノベルティ","終日"],
+ ["27","10:00","K-19","江戸川区","ミニしめ縄飾りづくり","2人1組"],
+ ["27","10:00","K-20","信越自然郷","自転車コーヒー体験、クイズラリー、試飲",""],
+ ["27","10:00","L-03","福井県","油あげの実演・試食／恐竜・越前ガニなりきりクラフト／恐竜トレカラリー","すべて無料"],
+ ["27","10:00","L-08","常滑市","常滑焼の急須で呈茶、炙り海苔の試食",""],
+ ["27","10:00","L-15","三重県","みえ旅クイズラリー＆ガラガラ抽選会",""],
+ ["27","10:00","M-19","丹波篠山市","丹波焼ガチャ",""],
+ ["27","10:00","N-02","はつかいち宮島","けん玉チャレンジ（豪華景品）",""],
+ ["27","10:00","N-05","隠岐 西ノ島町","アンケートで割引クーポン","先着50名"],
+ ["27","10:00","X-06","JTB","くまもんダンジョン体験コーナー","終日"],
+ ["27","10:00","X-05","阪急交通社","ハズレなし！巨大ガチャ抽選会","終日"],
+ ["27","10:30","J-01","東北・JR東日本","伝統工芸品ワークショップ／地酒と絶品アイス",""],
+ ["27","10:30","K-05","お台場","ゆりかもめ「ゆりも」に会おう！",""],
+ ["27","10:30","L-15","尾鷲市","尾鷲ひのきのオリジナル木札づくり",""],
+ ["27","10:30","M-20","奈良市","しかまろくんグリーティング",""],
+ ["27","10:30","N-03","山口ゆめ回廊","7市町の地酒試飲","各回数量限定"],
+ ["27","10:30","X-05","阪急交通社","YouTuber かほさん登場",""],
+ ["27","11:00","D-19","ポルトガル","イワシの缶詰パッキングワークショップ",""],
+ ["27","11:00","G-12","中国","拓本体験",""],
+ ["27","11:00","J-06","秋田","りんごジュース試飲","SNSフォロー・数量限定"],
+ ["27","11:00","J-08","仙台市","こけしの絵付け③","無料・4名・整理券"],
+ ["27","11:00","K-05","お台場","ペーパークラフト「東京ポータ郎さん」",""],
+ ["27","11:00","K-16","クレヨンしんちゃん","しんちゃんグリーティング（〜11:30）",""],
+ ["27","11:00","L-05","鯖江市","プチ絵付け体験",""],
+ ["27","11:00","M-20","奈良市","ガラポン大抽選会",""],
+ ["27","11:00","X-12","読売旅行","ブンブンゴマづくり",""],
+ ["27","11:00","M-02","京和傘 日吉屋","ミニ和傘の制作体験","5,000円"],
+ ["27","11:20","L-02","松本市","初めてのてまり作り",""],
+ ["27","11:30","G-35","ソウル","Day & Night ルーレット／限定ポスター配布",""],
+ ["27","11:30","K-04","東京都","トーク「江戸里神楽の魅力」",""],
+ ["27","11:30","TP-05","日米観光交流","エルモ撮影会","混雑時は受付終了"],
+ ["27","11:40","Q-05","奄美群島","与論島 星砂探し",""],
+ ["27","12:00","C-07","南アフリカ","ドラムカフェのミニライブ",""],
+ ["27","12:00","K-04","東京都","お香「印香」づくり①","12名・整理券10:00〜"],
+ ["27","12:00","X-01","Trip.com","ラッキースロット",""],
+ ["27","12:20","Q-05","奄美群島","奄美大島 特産品つかみ取り",""],
+ ["27","12:30","J-08","仙台市","クイズに答えて仙台名物「ずんだ餅」","先着200名"],
+ ["27","12:30","X-05","阪急交通社","添乗員が案内するバーチャル世界旅行",""],
+ ["27","13:00","G-12","中国","金箔扇子づくり",""],
+ ["27","13:00","G-35","ソウル","K-POPカバーダンス",""],
+ ["27","13:00","K-04","東京都","山崎怜奈トークショー",""],
+ ["27","13:00","X-06","JTB","フェンシング松山恭助トークセッション",""],
+ ["27","13:00","X-12","読売旅行","竹のお箸づくり",""],
+ ["27","13:00","Y-38","さとらんど（札幌）","アンケートでじゃがいも「アンデスレッド」",""],
+ ["27","13:20","K-05","お台場","ソニック・ザ・ヘッジホッグに会おう！",""],
+ ["27","13:30","G-35","ソウル","限定ポスター配布",""],
+ ["27","13:30","J-06","秋田","ぶどうジュース試飲","SNSフォロー・数量限定"],
+ ["27","13:30","J-08","仙台市","こけしの絵付け④","無料・4名・整理券"],
+ ["27","13:30","TP-05","日米観光交流","エルモ撮影会","混雑時は受付終了"],
+ ["27","13:30","X-06","JTB","九州クイズ大会",""],
+ ["27","13:45","K-05","お台場","宇宙センターをつくろう！ワークショップ",""],
+ ["27","14:00","G-12","中国","蓮の花の香袋づくり",""],
+ ["27","14:00","K-04","東京都","トーク「東京島酒」と東京の島々",""],
+ ["27","14:00","K-16","クレヨンしんちゃん","しんちゃんグリーティング（〜14:30）",""],
+ ["27","14:00","M-02","京和傘 日吉屋","ミニ和傘の制作体験","5,000円"],
+ ["27","14:00","Y-14","海があるから","ジャンボフェリーのミニステージ",""],
+ ["27","14:30","G-35","ソウル","韓国語ネームキーホルダーづくり",""],
+ ["27","14:30","K-04","東京都","お香「香袋」づくり②","12名・整理券14:00〜"],
+ ["27","15:00","D-19","ポルトガル","おやつの時間：パステル・デ・ナタ",""],
+ ["27","15:00","G-12","中国","拓本体験",""],
+ ["27","15:00","K-05","お台場","ゆりかもめ「ゆりも」に会おう！",""],
+ ["27","15:00","Q-01","大分県","名産かぼすの「追いかぼす」体験",""],
+ ["27","15:00","X-01","Trip.com","ラッキースロット",""],
+ ["27","15:00","X-12","読売旅行","トークLIVE：あそびと学びで子どもの成長",""],
+ ["27","15:15","J-08","仙台市","こけしの絵付け⑤","無料・4名・整理券"],
+ ["27","15:20","Q-05","奄美群島","与論島 星砂探し",""],
+ ["27","15:30","J-06","秋田","地酒試飲","SNSフォロー・数量限定・20歳以上"],
+ ["27","15:30","K-04","東京都","トーク：江戸の娯楽（歌舞伎と相撲）",""],
+ ["27","15:30","TP-05","日米観光交流","エルモ撮影会","混雑時は受付終了"],
+ ["27","16:00","D-19","ポルトガル","ミシュラン星付きシェフのトーク",""],
+ ["27","16:00","G-12","中国","中秋のミニランタンづくり",""],
+ ["27","16:00","Q-05","奄美群島","奄美大島 特産品つかみ取り",""],
+ ["27","16:30","Q-05","奄美群島","奄美市キャラクター「コクト君」登場",""]
+];
+
+/* ---------- booth grid ---------- */
+const state={area:"すべて",feat:new Set(),q:""};
+const $=s=>document.querySelector(s);
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function item(s){const i=s.indexOf("|");if(i<0)return esc(s);const t=s.slice(0,i),src=s.slice(i+1);if(src.startsWith("X:")){const u=src.slice(2);return esc(t)+`<a class="src xl" href="${esc(u)}" target="_blank" rel="noopener" aria-label="Xの元投稿を開く" title="Xの元投稿を開く"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.9-6.4L6.3 22H3.2l7.3-8.3L1 2h6.3l4.4 5.9zm-1.1 18h1.7L6.3 3.9H4.5z"/></svg></a>`}if(src.startsWith("PR:")){return esc(t)+`<a class="src pl" href="${esc(src.slice(3))}" target="_blank" rel="noopener" title="元のプレスリリース・記事を開く">PR</a>`}return esc(t)+`<span class="src">${src}</span>`}
+function plain(s){return s.split("|")[0]}
+function chips(){
+  $("#f-area").innerHTML=AREAS.map(a=>`<button class="chip" id="area-${a}" aria-pressed="${state.area===a}" data-area="${a}">${a}</button>`).join("");
+  $("#f-feat").innerHTML=Object.entries(FEAT).map(([k,v])=>`<button class="chip" id="feat-${k}" aria-pressed="${state.feat.has(k)}" data-feat="${k}">${v}</button>`).join("");
+}
+function blk(cls,label,arr){return arr&&arr.length?`<div class="blk ${cls}"><span class="lb">${label}</span><ul>${arr.map(x=>`<li>${x}</li>`).join("")}</ul></div>`:""}
+function render(){
+  const q=state.q.trim().toLowerCase();
+  const list=B.filter(b=>(state.area==="すべて"||b.a===state.area)&&[...state.feat].every(f=>f==="fav"?FAV.has(bid(b)):b.f.includes(f))&&(!q||[b.n,b.r,b.c,b.g,...b.e,...b.gi,...b.d].join(" ").toLowerCase().includes(q)));
+  $("#count").textContent=`${list.length} / ${B.length} ブース`;
+  $("#grid").innerHTML=list.length?list.map(b=>{
+    const evs=EV.filter(e=>e[2]===b.g&&(b.g!=="Q-01"||b.n==="九州")).length;
+    return `
+  <article class="card" id="booth-${B.indexOf(b)}">
+    <div class="art">${art(b.m,b.p)}<div class="gate"><span class="k">GATE</span><span class="v">${b.g}</span></div>${b.nw?'<span class="new">初出展</span>':""}<span class="imgnote">イメージ</span>${favBtn(bid(b),b.n)}</div>
+    <div class="cbody">
+      <div class="region">${esc(b.a)} · ${esc(b.r)}${b.h?` · ${b.h}`:""}</div>
+      <h3>${esc(b.n)}</h3>
+      <p class="catch">${esc(b.c)}</p>
+      ${blk("eat","食べる",b.e.map(item))}
+      ${blk("gift","もらう",b.gi.map(item))}
+      ${blk("do","体験",b.d.map(item))}
+      ${evs?`<div class="blk ev"><span class="lb">時刻</span><ul><li><a href="#events" data-jump="${b.g}">このブースの時刻イベント ${evs}件 →</a></li></ul></div>`:""}
+      <div class="tags">${b.f.map(f=>`<span class="tag${f==="kids"?" kid":""}">${FEAT[f]}</span>`).join("")}</div>
+      <div class="meta"><div><div class="k">AGE 想定年齢</div><div class="v">${esc(b.age)}</div></div><div><div class="k">TIME 所要目安</div><div class="v">${esc(b.t)}</div></div></div>
+      ${b.u?`<a class="olink" href="${X}${b.u}/BtoC" target="_blank" rel="noopener">写真と詳細（公式）→</a>`:""}
+    </div>
+  </article>`}).join(""):`<div class="empty">条件に合うブースがありません。絞り込みを減らしてみてください。</div>`;
+}
+document.addEventListener("click",e=>{
+  const a=e.target.closest("[data-area]"),f=e.target.closest("[data-feat]"),ix=e.target.closest("[data-idx]"),ed=e.target.closest("[data-eday]"),jp=e.target.closest("[data-jump]");
+  if(a){state.area=a.dataset.area;chips();render()}
+  if(f){const k=f.dataset.feat;state.feat.has(k)?state.feat.delete(k):state.feat.add(k);chips();render()}
+  if(ix){idx(ix.dataset.idx)}
+  if(ed){events(ed.dataset.eday)}
+  if(jp){evFilter=jp.dataset.jump;events(curDay)}
+});
+$("#q").addEventListener("input",e=>{state.q=e.target.value;render()});
+
+/* ---------- index tables ---------- */
+function cond(t){const m=[];if(/20歳以上/.test(t))m.push("20歳以上");if(/SNS|フォロー|Instagram|LINE/.test(t))m.push("SNS・LINE登録");if(/アンケート/.test(t))m.push("アンケート");if(/数量限定|先着|なくなり次第|在庫/.test(t))m.push("数量限定・先着");if(/整理券/.test(t))m.push("整理券");if(/有料|円/.test(t))m.push("有料");if(/抽選|ガチャ|ガラポン|ガラガラ|くじ|ドロー|当たる/.test(t))m.push("抽選");if(/スタンプ|ラリー/.test(t))m.push("ラリー");if(/クイズ/.test(t))m.push("クイズ");return m.join("・")||"来場でOK"}
+function idx(k){
+  document.querySelectorAll("[data-idx]").forEach(t=>t.setAttribute("aria-selected",t.dataset.idx===k));
+  const rows=[];
+  B.forEach(b=>{(k==="e"?b.e:b.gi).forEach(s=>rows.push([b.g,b.n,s]))});
+  if(k==="g")EXTRA_GIFTS.forEach(r=>rows.push(r));
+  $("#idx").innerHTML=`<thead><tr><th>GATE</th><th>ブース</th><th>${k==="e"?"食べられる・飲めるもの":"もらえる・当たるもの"}</th><th>条件</th></tr></thead><tbody>${rows.map(([g,n,s])=>`<tr><td class="g">${g}</td><td class="n">${esc(n)}</td><td>${item(s)}</td><td class="c">${cond(plain(s))}</td></tr>`).join("")}</tbody>`;
+}
+
+/* ---------- booth events ---------- */
+let curDay="26",evFilter="";
+function events(day){
+  curDay=day;
+  document.querySelectorAll("[data-eday]").forEach(t=>t.setAttribute("aria-selected",t.dataset.eday===day));
+  const list=EV.filter(e=>e[0]===day&&(!evFilter||e[2]===evFilter));
+  const hours={};list.forEach(e=>{const h=e[1].slice(0,2);(hours[h]=hours[h]||[]).push(e)});
+  const note=evFilter?`<div class="alert" style="margin:0"><span class="stampmark">FILTER</span><div>GATE <b>${evFilter}</b> のイベントだけを表示中。<button class="chip" id="ev-clear" data-clear="1">すべて表示</button></div></div>`:"";
+  $("#tl").innerHTML=note+(Object.keys(hours).sort().map(h=>`<div class="hr"><div class="h">${h}:00</div><ul>${hours[h].map(e=>`<li data-ek="${e[0]}|${e[2]}|${e[1]}"><span class="t">${e[1]}</span><span class="b">${e[2]}</span><span class="w">${esc(e[3])}：${esc(e[4])}${e[5]?`<small>${esc(e[5])}</small>`:""}</span>${favBtn(eid(e),e[3]+" "+e[4],1)}</li>`).join("")}</ul></div>`).join("")||`<div class="empty">この日の時刻イベントはありません。もう一方の日を見てください。</div>`);
+}
+document.addEventListener("click",e=>{if(e.target.closest("[data-clear]")){evFilter="";events(curDay)}});
+
+/* ---------- stage ---------- */
+const S={
+"26":{
+ A:[["10:00","10:30","JAL・JCB・JTB共同企画 学生のアイデアが旅になる。ハワイ新プロジェクト発表",[]],["10:45","11:10","マルタ・イン・ザ・スカイ ダンスパフォーマンス",["ダンス"]],["11:20","11:50","1泊1万円から乗れる!? 豪華クルーズ旅の魅力（YKKゆかこ）",["トーク"]],["12:10","12:40","世界一の太鼓パレード「盛岡さんさ踊り」",["伝統芸能","kid"]],["13:00","13:30","北海道観光PR（キュンちゃん、アイヌ古式舞踊）",["伝統芸能","kid"]],["13:50","14:20","ルイジアナ・ジャズ オンステージ",["音楽"]],["14:40","15:10","海外サイクリングとスキーの旅（別府史之、清澤恵美子）",["トーク"]],["15:30","16:00","365日楽しめるFVILLAGE！（ファイターズガール）",["ダンス","kid"]],["16:10","16:40","空手発祥の地・沖縄",["武道","kid"]],["16:50","17:20","タヒチアンダンス（Te Ra Kyoko／Ori Tahiti）",["ダンス"]],["17:30","18:00","華彩中国 ～変面・二胡・獅子舞～",["伝統芸能","kid"]]],
+ B:[["10:00","10:30","百花繚乱 向島芸妓衆",["伝統芸能"]],["10:40","11:10","ゆるキャラ大集合！信越自然郷わくわくクイズ大会（上位10名に賞品）",["クイズ","kid"]],["11:20","11:50","タイガーエア台湾「とことん欲張る台湾旅」（クイズで賞品）",["トーク","クイズ"]],["12:00","12:30","ひろしまコウネ×TEPPANライブ",["音楽"]],["12:40","13:10","高橋愛の「今日行く？韓国！」トークショー",["トーク"]],["13:20","13:50","ANAの直行便で行くスウェーデン旅（クイズあり）",["トーク","クイズ"]],["14:00","14:30","世界初！クレヨンしんちゃん家族都市プロジェクト（しんちゃん撮影会）",["キャラクター","kid"]],["14:40","15:10","GREEN×EXPO 2027 トゥンクトゥンクがやってくる！",["キャラクター","kid"]],["15:30","16:00","Trip.Palインフルエンサー流 Travel Hacks",["トーク"]],["16:10","16:40","熊本城おもてなし武将隊 おもてなし演舞",["演武","kid"]],["16:50","17:20","タイ伝統舞踊",["伝統芸能"]],["17:30","18:00","旅クイズ トラベル25",["クイズ"]]],
+ T:[["10:30","11:00","商船三井グループの船旅の世界",["トーク"]],["11:20","11:50","KARATE SPIRIT JAPAN（空手演武と体験）",["武道","kid"]],["13:00","13:30","ブルーフラッグで挑む、持続可能なビーチ観光",["トーク"]],["13:50","14:20","イメージの遊びとしての観光 ―妖怪からダンジョンまで―",["講義"]],["14:40","15:10","和歌山大学観光学部の挑戦",["講義"]],["15:30","16:00","キルギス伝統音楽（コムズ）",["音楽"]],["16:20","16:50","ディズニー・アドベンチャーへの旅",["トーク"]],["17:10","17:40","キュナード・ラインとホーランドアメリカライン",["トーク"]]]
+},
+"27":{
+ A:[["10:00","10:30","市長＆トコタンの常滑観光クイズ（1万円商品券など）",["クイズ","kid"]],["10:40","11:10","愛知県 武将隊・忍者隊ステージ",["演武","kid"]],["11:20","11:50","楽しすぎるぞ 岐阜（さばいどる かほなん）",["トーク"]],["12:10","12:40","南アフリカのリズムに合わせてレッツ・ダンス！（ドラムカフェ）",["音楽","kid"]],["13:00","13:30","豊臣秀長公ゆかりの奈良・長谷寺「声明」講演",["伝統芸能"]],["13:50","14:20","フルコンタクト武道空手の演武",["武道"]],["14:40","15:10","四国のゆるキャラ大集合！＆写真撮影会",["キャラクター","kid"]],["15:30","16:00","グアムミュージック＆チャモロダンスショー",["ダンス"]]],
+ B:[["10:00","10:30","とっとり知っとる？鳥取県ってこんなとこ（トリピー）",["キャラクター","kid"]],["10:40","11:10","しずおか観光大使 岡副麻希さんトークショー",["トーク"]],["11:20","11:50","ビビビビ！台湾 マリバリ文化芸術団",["伝統芸能"]],["12:00","12:30","伊達武将隊 演武と仙台観光PR",["演武","kid"]],["12:40","13:10","日光市PRステージ",["トーク"]],["13:20","13:50","ウィラ＆マンジャのマレーシアクイズ大会",["クイズ","kid"]],["14:00","14:30","「地球の歩き方」編集プロデューサーと巡る成田空港から始まる旅",["トーク"]],["14:40","15:10","広島・宮島めぐり（クイズ大会あり）",["トーク","クイズ"]],["15:30","16:00","首里城復興の舞台裏（ガレッジセール）",["トーク"]]],
+ T:[["10:30","11:00","「東北・食と暮らしの旅」のご紹介",["トーク"]],["11:20","11:50","南極って行けるの？",["トーク"]],["13:00","13:30","就職活動に向けて",["講義"]],["13:50","14:20","『まちづくり』×『観光』名城大学都市情報学部",["講義"]],["14:40","15:10","侍体験（殺陣）※希望者1名が壇上で体験",["武道","kid"]],["15:30","16:00","高大連携で育む東海エリアの観光人材",["講義"]]]
+}};
+const SN={A:["Aステージ","メイン"],B:["Bステージ","トーク・キャラ"],T:["TEJコレクションステージ","特集テーマ"]};
+function stage(day){
+  document.querySelectorAll(".tab[data-day]").forEach(t=>t.setAttribute("aria-selected",t.dataset.day===day));
+  $("#tt").innerHTML=["A","B","T"].map(k=>`<div class="col"><h3>${SN[k][0]}<span>${SN[k][1]}</span></h3>${S[day][k].map(([s,e,t,tg])=>`<div class="slot" data-sk="${day}|${k}|${s}"><div class="tm">${s}<small>–${e}</small></div><div><div class="ti">${esc(t)}</div><div class="ki">${tg.filter(x=>x!=="kid").map(x=>`<span>${x}</span>`).join("")}${tg.includes("kid")?'<span class="kid">親子おすすめ</span>':""}</div></div>${favBtn(sid(day,k,s),t,1)}</div>`).join("")}</div>`).join("");
+}
+document.querySelectorAll(".tab[data-day]").forEach(t=>t.addEventListener("click",()=>stage(t.dataset.day)));
+
+/* ---------- courses ---------- */
+const C=[
+ {h:"ファミリーで大冒険",d:"9/26（土）約4時間",p:"キャラクター、制服、甲冑、恐竜。子どもが「なりきれる」体験を中心に。",s:[["10:40","Bステージ","ゆるキャラ大集合！信越自然郷クイズ大会"],["11:15","L-03","福井県：動く恐竜モニュメントの発掘パビリオン"],["11:45","M-21","奈良県：甲冑・刀の着用体験と射的ゲーム"],["12:15","M-10","和歌山県：鉄道の子ども用制服に着替えて撮影"],["12:40","東1ホール","ランチ：スパムむすび、シェイブアイス、アサイーボウル"],["14:00","Bステージ","クレヨンしんちゃん家族都市（しんちゃん撮影会）"],["14:40","Bステージ","トゥンクトゥンクがやってくる！"],["15:15","G-12","中国：パンダフォトスポットと持ち帰りクラフト"],["15:45","J-01","東北・JR東日本：駅長制服体験と祭り衣装"]]},
+ {h:"食べて飲んで世界一周",d:"どちらの日も・約5時間",p:"試食・試飲ブースを巡って、最後はキッチンカーで締め。お酒は20歳以上のみ。",s:[["10:30","Q-01","九州：地元民が選んだ銘菓とドリンクのセット（数量限定）"],["11:00","I-01","北海道：TASTING BARで約30銘柄から試飲"],["11:30","L-10","石川県：甘エビ・サワラの試食、日本酒・どぶろく"],["12:00","L-08","常滑市：常滑焼の急須でお茶、炙りたての鬼崎のり"],["12:30","D-14","ジョージア：8,000年の伝統を持つワインの試飲"],["13:00","G-06","台湾：茶席で台湾茶を味わう"],["13:40","東7ホール","キッチンカー：広島名物「コウネ焼き」"],["15:00","D-19","ポルトガル：おやつの時間のパステル・デ・ナタ"]]},
+ {h:"伝統と手仕事にふれる",d:"9/26（土）約5時間",p:"芸妓の舞で始まり、各地のワークショップで手を動かし、変面ショーで締める一日。",s:[["10:00","Bステージ","百花繚乱 向島芸妓衆"],["10:45","K-04","東京都：江戸手描提灯・お香づくり"],["12:00","K-12","向島花街：芸妓と記念撮影・お座敷遊び（正午〜14時頃）"],["13:00","D-17","ポーランド：木製ビーズの首飾り・蜜蝋キャンドル"],["14:00","L-02","南砺市：井波彫刻の木片で「マイ・サシェ」（有料）"],["15:00","G-06","台湾：藺草（いぐさ）編みのDIY"],["17:30","Aステージ","華彩中国 ～変面・二胡・獅子舞～"]]}
+];
+$("#courses-list").innerHTML=C.map(c=>`<article class="course"><div class="hd"><h3>${c.h}</h3><span class="dur">${c.d}</span></div><p>${c.p}</p><ol class="steps">${c.s.map(([t,g,x])=>`<li><div><span class="g">${t} · ${g}</span><b>${esc(x)}</b></div></li>`).join("")}</ol></article>`).join("");
+
+/* ---------- food ---------- */
+const F=[
+ ["東1ホール","ハワイ・グアム・世界",[["エル アンド エル ハワイアンバーベキュー","スパムむすび、シェイブアイス"],["サンバゾン","アサイーボウル、アサイースムージー"],["ワウワウハワイアン レモネード","クラシック／リリコイレモネード"],["キングスハワイアン","ハワイアンスウィートロール"],["グアム チャモロフードトラック","チャモロハンバーガー、ティナクタックライス"],["イスタンブールGINZA","ケバブ、トルコドッグ、トルコワイン"],["アフリカンホームタッチ","クロコダイルレッグ、ジョロフライス"]]],
+ ["東3ホール","台湾・スイーツ",[["underground","香薫ホットドッグ、台湾パイナップルジュース"],["ケイズキッチン","やきそば、牛ステーキ串、タピオカ"],["futabacraft","イタリアンジェラート、ディップポテト"]]],
+ ["東3・8ホール間 屋外","アジアごはん",[["スパイス","牛とろ丼、ローストビーフ丼"],["タイ料理アローイ・アロイ","ガパオライス、パッタイ、バインミー"],["エリジュス","ケバブサンド、ロングポテト"],["HEART WRAP","タコライス、タコス"],["明洞焼肉食堂","サムギョプサルのビビンバ"]]],
+ ["東7ホール","ご当地グルメ",[["コウネを流行らせたいんじゃ！（広島）","コウネ焼き、コウネバーガー"],["レッドガウル 3802","炙り牛たたき丼、赤身牛寿司"],["てっぺん屋_GOLD","飛騨豚丼、飛騨牛サイコロステーキ丼"],["オムキッチン","片手で食べるオムライス、クリームソーダ"],["KAHELL","クレープ、ベルギーワッフルサンド"],["K's Pit","沖縄タコライス、ナチョス"]]]
+];
+$("#halls").innerHTML=F.map(([h,s,l])=>`<div class="hall"><h3><span class="pin">EAT</span>${h}</h3><div style="font-size:12.5px;color:var(--muted)">${s}</div><ul>${l.map(([n,m])=>`<li><b>${esc(n)}</b><span>${esc(m)}</span></li>`).join("")}</ul></div>`).join("");
+
+/* ---------- rally list ---------- */
+const R=[["ソウル観光財団 G-35","5つでラッキードロー"],["北海道観光機構 I-01","定番土産がもらえる"],["広島県 N-02","4つで抽選・参加賞缶バッジ"],["和歌山県 M-10","抽選会にチャレンジ"],["沖縄県 S-12","周辺ブースで重ね捺し"],["台湾 G-06","スタンプラリー抽選会"],["パシフィック・ノースウエスト A-10","オリジナルグッズ"],["ニセコ観光圏 I-04","ブース内シールラリー"],["日本遺産 Y-30","クイズラリーでノベルティ"],["愛知県 L-14","クイズラリー"],["JR東海ツアーズ X-03","新幹線柄マスキングテープ"],["近畿日本ツーリスト X-14","ドームエアー抽選くじ"]];
+$("#rlist").innerHTML=R.map(([a,b])=>`<li><span>${a}</span><span>${b}</span></li>`).join("");
+
+/* ---------- themes ---------- */
+const T=[["ウェルネスツーリズム","ヨガ、リトリート、日本発のフットケアで心身を整える旅。","#7FBF9A"],["ガストロノミーツーリズム","郷土料理や生産者との交流で、土地の物語を味わう。","#E08A3C"],["ドライブツーリズム","ラグジュアリーカー、キャンピングカー、バイクで巡るクルマ旅。","#4A78B5"],["星空ツーリズム","光害の少ない地域で満天の星と出会うナイトツアー。","#3B3F8F"],["コンテンツツーリズム","ロケ地巡礼からXR、VTuberまで、作品世界に入り込む旅。","#C4412A"],["アカデミー","大学・専門学校の学生が観光プロジェクトや研究を発表。","#8A6BB8"],["クルーズ","豪華客船から気軽な船旅まで、移動そのものを楽しむ。","#1E8FA6"],["アドベンチャーツーリズム","サイクリングや先住文化体験など、自然と文化の冒険旅。","#5D8F3E"],["スポーツツーリズム","武道ツーリズムをはじめ、観戦・競技で地域を訪ねる。","#D99A1E"],["観光SDGs","ユニバーサルツーリズムや海の環境保全など持続可能な観光。","#2E8B57"],["旅の広場","アメリカ本土、ハワイ、アラスカなど旅の専門家に気軽に相談。","#B5566E"]];
+$("#themes").innerHTML=T.map(([h,p,c])=>`<div class="theme" style="--c:${c}"><h3>${h}</h3><p>${p}</p></div>`).join("");
+
+/* ---------- favorites ---------- */
+const FKEY="tej2026-favs";
+let FAV=new Set();
+try{const v=JSON.parse(localStorage.getItem(FKEY)||"[]");if(Array.isArray(v))FAV=new Set(v)}catch(_){}
+function saveFav(){try{localStorage.setItem(FKEY,JSON.stringify([...FAV]))}catch(_){}}
+function bid(b){return "b:"+b.g+":"+b.n}
+function sid(day,k,t){return "s:"+day+":"+k+":"+t}
+function eid(e){return "e:"+e[0]+":"+e[1]+":"+e[2]+":"+e[4].slice(0,16)}
+function favBtn(id,label,sm){const on=FAV.has(id);return `<button class="fav${sm?" sm":""}" data-fav="${esc(id)}" aria-pressed="${on}" aria-label="${esc(label)}を${on?"お気に入りから外す":"お気に入りに追加"}" title="${on?"お気に入りから外す":"お気に入りに追加"}">${'<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .7-4.5 4.1 1.2 5.9L12 16.4l-5.3 3 1.2-5.9L3.4 9.4l6-.7z"/></svg>'}</button>`}
+function favItems(){
+  const booths=B.filter(b=>FAV.has(bid(b)));
+  const sched=[];
+  Object.entries(S).forEach(([day,st])=>Object.entries(st).forEach(([k,rows])=>rows.forEach(([s,e,t])=>{const id=sid(day,k,s);if(FAV.has(id))sched.push({day,t:s,where:SN[k][0],txt:t,id,kind:"s",stage:k})})));
+  const seen=new Set();
+  EV.forEach(e=>{const id=eid(e);if(FAV.has(id)){seen.add(id);sched.push({day:e[0],t:e[1],where:e[2],txt:e[3]+"："+e[4],note:e[5],id,kind:"e"})}});
+  booths.forEach(b=>EV.forEach(e=>{if(e[2]===b.g&&(b.g!=="Q-01"||b.n==="九州")){const id=eid(e);if(!seen.has(id)){seen.add(id);sched.push({day:e[0],t:e[1],where:e[2],txt:e[3]+"："+e[4],note:e[5],id,auto:1,kind:"e"})}}}));
+  sched.sort((a,b)=>(a.day+a.t).localeCompare(b.day+b.t));
+  return {booths,sched};
+}
+let clearArm=false;
+function renderFav(){
+  const {booths,sched}=favItems();
+  const n=FAV.size;
+  $("#navcnt").textContent=n?String(n):"";
+  $("#fav-bn").textContent=booths.length?`${booths.length}件`:"";
+  $("#fav-sn").textContent=sched.length?`${sched.length}件`:"";
+  $("#fav-booths").innerHTML=booths.length?`<ul class="favlist">${booths.map(b=>{const hi=[b.e[0],b.gi[0],b.d[0]].filter(Boolean).map(plain).slice(0,2).join(" ／ ");return `<li><span class="g">${b.g}</span><a class="go" href="#booth-${B.indexOf(b)}" data-goto="b" data-key="${B.indexOf(b)}"><b>${esc(b.n)}</b><small>${esc(hi)}</small></a>${favBtn(bid(b),b.n,1)}</li>`}).join("")}</ul>`:`<p class="favempty">まだありません。ブースのカード右上の☆を押してください。</p>`;
+  const days={"26":"9/26（土）","27":"9/27（日）"};
+  $("#fav-sched").innerHTML=sched.length?Object.keys(days).map(d=>{const r=sched.filter(x=>x.day===d);return r.length?`<div class="dayh">${days[d]}</div><ul class="favlist">${r.map(x=>`<li><span class="g">${x.t}</span><a class="go" href="#${x.kind==="s"?"stage":"events"}" data-goto="${x.kind}" data-key="${esc(x.kind==="s"?x.day+"|"+x.stage+"|"+x.t:x.day+"|"+x.where+"|"+x.t)}"><b>${esc(x.txt)}${x.auto?'<span class="auto">お気に入りブース</span>':""}</b><small>${esc(x.where)}${x.note?"・"+esc(x.note):""}</small></a>${favBtn(x.id,x.txt,1)}</li>`).join("")}</ul>`:""}).join(""):`<p class="favempty">ステージやブース内イベントの☆を押すと、時刻順に並びます。お気に入りにしたブースの時刻イベントも自動で入ります。</p>`;
+  $("#favbar").innerHTML=n?`<button class="btn" id="fav-copy" data-favcopy="1">リストをコピー</button>${clearArm?`<span class="favnote">本当にすべて外しますか？</span><button class="btn warn" id="fav-clear-yes" data-favclear="yes">すべて外す</button><button class="btn ghost" id="fav-clear-no" data-favclear="no">やめる</button>`:`<button class="btn ghost" id="fav-clear" data-favclear="ask">すべて外す</button>`}<span class="favnote" id="fav-msg" role="status"></span>`:"";
+}
+function favText(){
+  const {booths,sched}=favItems();
+  const L=["ツーリズムEXPOジャパン2026 お気に入り",""];
+  if(booths.length){L.push("■ ブース");booths.forEach(b=>L.push(`${b.g} ${b.n}`));L.push("")}
+  ["26","27"].forEach(d=>{const r=sched.filter(x=>x.day===d);if(r.length){L.push(d==="26"?"■ 9/26（土）":"■ 9/27（日）");r.forEach(x=>L.push(`${x.t} ${x.where} ${x.txt}${x.note?"（"+x.note+"）":""}`));L.push("")}});
+  return L.join("\n");
+}
+document.addEventListener("click",async e=>{
+  const fb=e.target.closest("[data-fav]");
+  if(fb){const id=fb.dataset.fav;FAV.has(id)?FAV.delete(id):FAV.add(id);saveFav();
+    const on=FAV.has(id);
+    document.querySelectorAll(`[data-fav="${CSS.escape(id)}"]`).forEach(x=>{x.setAttribute("aria-pressed",on);x.title=on?"お気に入りから外す":"お気に入りに追加";x.setAttribute("aria-label",x.getAttribute("aria-label").replace(/を(お気に入りに追加|お気に入りから外す)$/,on?"をお気に入りから外す":"をお気に入りに追加"))});
+    if(state.feat.has("fav"))render();
+    renderFav();return}
+  const fc=e.target.closest("[data-favclear]");
+  if(fc){const v=fc.dataset.favclear;if(v==="ask")clearArm=true;else{if(v==="yes"){FAV.clear();saveFav();render();stage(document.querySelector(".tab[data-day][aria-selected=true]")?.dataset.day||"26");events(curDay)}clearArm=false}renderFav();return}
+  if(e.target.closest("[data-favcopy]")){const t=favText();let ok=false;try{await navigator.clipboard.writeText(t);ok=true}catch(_){}
+    const m=$("#fav-msg");if(ok){m.textContent="コピーしました。メモやLINEに貼り付けられます。"}else{m.innerHTML=`コピーできませんでした。下の文字を選択してコピーしてください。<textarea id="fav-text" readonly style="display:block;width:100%;min-height:120px;margin-top:6px;font:inherit;font-size:12.5px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px">${esc(t)}</textarea>`;const ta=$("#fav-text");ta.focus();ta.select()}}
+});
+
+/* ---------- jump from favorites ---------- */
+function flash(el){if(!el)return;el.classList.remove("flash");void el.offsetWidth;el.classList.add("flash");el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"center"})}
+document.addEventListener("click",e=>{
+  const g=e.target.closest("[data-goto]");if(!g)return;e.preventDefault();
+  const kind=g.dataset.goto,key=g.dataset.key;
+  if(kind==="b"){let el=document.getElementById("booth-"+key);
+    if(!el){state.area="すべて";state.feat.clear();state.q="";$("#q").value="";chips();render();el=document.getElementById("booth-"+key)}
+    flash(el);return}
+  const [day,where,t]=key.split("|");
+  if(kind==="s"){stage(day);flash(document.querySelector(`[data-sk="${CSS.escape(day+"|"+where+"|"+t)}"]`));return}
+  const card=B.findIndex(b=>b.g===where&&(where!=="Q-01"||b.n==="九州"));
+  if(card>=0&&!g.closest("#fav-sched")){flash(document.getElementById("booth-"+card));return}
+  evFilter="";events(day);flash(document.querySelector(`[data-ek="${CSS.escape(day+"|"+where+"|"+t)}"]`));
+});
+
+/* ---------- latest news (filled by the Saturday-night update) ---------- */
+/* NEWS: [時刻表示 例"9/26 20:10", GATE, 見出し, 本文, X投稿URL] 新しい順 */
+const NEWS = [];
+const NEWS_AT = "";
+function renderNews(){
+  if(!NEWS.length)return;
+  $("#news").hidden=false;
+  $("#news-at").textContent=NEWS_AT?`${NEWS_AT} 更新`:"";
+  $("#news-list").innerHTML=NEWS.map(([t,g,h,body,url])=>{const i=B.findIndex(b=>b.g===g);return `<li><span class="g">${esc(t)}<br>${esc(g||"")}</span><span><b>${i>=0?`<a href="#booth-${i}" data-goto="b" data-key="${i}">${esc(h)}</a>`:esc(h)}</b>${esc(body)}${url?item("|X:"+url):""}</span></li>`}).join("");
+  const nl=document.querySelector('.nav a[href="#favs"]')?.parentElement;if(nl&&!document.querySelector('.nav a[href="#news"]'))nl.insertAdjacentHTML("beforebegin",'<li><a class="l" href="#news">最新情報</a></li>');
+}
+
+chips();render();stage("26");idx("e");events("26");renderFav();renderNews();
+
+/* ---------- site config (GitHub Pages) ---------- */
+/* アフィリエイトURLを "" の中に貼るだけで、ボタンのリンク先と広告表記が切り替わります */
+const SITE = {
+  aff: {
+    rakuten: "",   // 楽天トラベル（楽天アフィリエイトのリンク）
+    jalan:   "",   // じゃらん（バリューコマース等のリンク）
+    veltra:  ""    // ベルトラ（ベルトラ アフィリエイトのリンク）
+  },
+  tip: ""          // OFUSE / Buy Me a Coffee などのURL（空なら非表示）
+};
+const TICKETS = [
+  ["official","公式サイトで買う","https://ars-texpo.triplabo.jp/activity/ja/LINKTIVITY-S2B83",1],
+  ["rakuten","楽天トラベル","https://experiences.travel.rakuten.co.jp/experiences/62769"],
+  ["jalan","じゃらん（日付指定）","https://www.jalan.net/kankou/spt_guide000000225556/activity_plan/"],
+  ["veltra","ベルトラ（日付指定）","https://www.veltra.com/jp/japan/tokyo/a/205565"],
+  ["yurikamome","ゆりかもめ乗車券セット","https://ars-yurikamome.triplabo.jp/activity/ja/LINKTIVITY-AIDAL"]
+];
+(function(){
+  const anyAff=Object.values(SITE.aff).some(Boolean);
+  document.getElementById("ad-disclosure").hidden=!anyAff;
+  const html=TICKETS.map(([k,label,url,main])=>{const a=SITE.aff[k];return `<a class="tk${main?" main":""}" href="${a||url}" target="_blank" rel="${a?"sponsored noopener":"noopener"}">${label}${a?'<span class="adlabel">広告</span>':""}</a>`}).join("");
+  const lead='<span class="favnote" style="align-self:center">入場券：前売は9/25 23:59まで、当日券は9/27 16:30までオンラインで購入可</span>';
+  document.getElementById("tickets-hero").innerHTML=lead+html;
+  document.getElementById("tickets-info").innerHTML=html;
+  const t=document.getElementById("tip");if(SITE.tip){t.href=SITE.tip;t.hidden=false}
+  const sx=document.getElementById("share-x");
+  sx.href="https://twitter.com/intent/tweet?text="+encodeURIComponent("ツーリズムEXPO 2026、82ブースの試食・プレゼント・体験と時刻イベントが1ページにまとまった非公式ガイド #ツーリズムEXPOジャパン")+"&url="+encodeURIComponent(location.href.split("#")[0]);
+})();
+</script>
+</body>
+</html>
