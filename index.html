@@ -149,8 +149,10 @@ h1.title small{display:block;font-family:var(--body);font-weight:500;font-size:1
 .art .fav{position:absolute;right:12px;top:12px;box-shadow:0 2px 8px rgba(0,0,0,.18)}
 .fav.sm{width:30px;height:30px}
 .fav.sm svg{width:15px;height:15px}
-.rm{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;border:1.5px solid var(--line);background:var(--card);color:var(--muted);cursor:pointer;padding:0;font-size:17px;line-height:1}
-.rm:hover,.rm:focus-visible{border-color:var(--stamp);color:var(--stamp)}
+.toast{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:14px;max-width:calc(100% - 32px);width:max-content;background:#15223A;color:#fff;border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:10px 12px 10px 16px;font-size:13.5px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.toast[hidden]{display:none}
+.toast span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.toast button{flex:none;background:none;border:0;color:#F0BC4E;font:inherit;font-weight:700;padding:6px 4px;cursor:pointer}
 .unhide{background:none;border:0;padding:0;color:var(--accent);text-decoration:underline;cursor:pointer;font:inherit}
 .slot{grid-template-columns:62px 1fr 30px!important}
 .hr li{grid-template-columns:48px 66px 1fr 30px!important}
@@ -399,6 +401,7 @@ footer .wrap{border-top:1px solid var(--line);padding-top:20px;display:flex;flex
       <div class="panel"><h3>時刻つきの予定 <span class="favnote" id="fav-sn"></span></h3><div id="fav-sched"></div></div>
     </div>
     <div class="favbar" id="favbar"></div>
+    <div class="toast" id="toast" role="status" hidden><span id="toast-msg"></span><button type="button" data-undo="1">元に戻す</button></div>
   </div>
 </section>
 
@@ -1002,7 +1005,8 @@ function saveFav(){try{localStorage.setItem(FKEY,JSON.stringify([...FAV]));local
 function bid(b){return "b:"+b.g+":"+b.n}
 function sid(day,k,t){return "s:"+day+":"+k+":"+t}
 function eid(e){return "e:"+e[0]+":"+e[1]+":"+e[2]+":"+e[4].slice(0,16)}
-function favBtn(id,label,sm){const on=FAV.has(id);return `<button class="fav${sm?" sm":""}" data-fav="${esc(id)}" aria-pressed="${on}" aria-label="${esc(label)}を${on?"お気に入りから外す":"お気に入りに追加"}" title="${on?"お気に入りから外す":"お気に入りに追加"}">${'<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .7-4.5 4.1 1.2 5.9L12 16.4l-5.3 3 1.2-5.9L3.4 9.4l6-.7z"/></svg>'}</button>`}
+function favBtn(id,label,sm){const on=FAV.has(id);return `<button class="fav${sm?" sm":""}" data-fav="${esc(id)}" aria-pressed="${on}" aria-label="${esc(label)}を${on?"お気に入りから外す":"お気に入りに追加"}" title="${on?"お気に入りから外す":"お気に入りに追加"}">${STAR}</button>`}
+const STAR='<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .7-4.5 4.1 1.2 5.9L12 16.4l-5.3 3 1.2-5.9L3.4 9.4l6-.7z"/></svg>';
 function favItems(){
   const booths=B.filter(b=>FAV.has(bid(b)));
   const sched=[];
@@ -1023,8 +1027,8 @@ function renderFav(){
   $("#fav-sn").textContent=sched.length?`${sched.length}件`:"";
   $("#fav-booths").innerHTML=booths.length?`<ul class="favlist">${booths.map(b=>{const hi=[b.e[0],b.gi[0],b.d[0]].filter(Boolean).map(plain).slice(0,2).join(" ／ ");return `<li><span class="g">${b.g}</span><a class="go" href="#booth-${B.indexOf(b)}" data-goto="b" data-key="${B.indexOf(b)}"><b>${esc(b.n)}</b><small>${esc(hi)}</small></a>${favBtn(bid(b),b.n,1)}</li>`}).join("")}</ul>`:`<p class="favempty">まだありません。ブースのカード右上の☆を押してください。</p>`;
   const days={"26":"9/26（土）","27":"9/27（日）"};
-  $("#fav-sched").innerHTML=sched.length?Object.keys(days).map(d=>{const r=sched.filter(x=>x.day===d);return r.length?`<div class="dayh">${days[d]}</div><ul class="favlist">${r.map(x=>`<li><span class="g">${x.t}</span><a class="go" href="#${x.kind==="s"?"stage":"events"}" data-goto="${x.kind}" data-key="${esc(x.kind==="s"?x.day+"|"+x.stage+"|"+x.t:x.day+"|"+x.where+"|"+x.t)}"><b>${esc(x.txt)}${x.auto?'<span class="auto">お気に入りブース</span>':""}</b><small>${esc(x.where)}${x.note?"・"+esc(x.note):""}</small></a><button class="rm" data-rm="${esc(x.id)}" aria-label="${esc(x.txt)}を予定から外す" title="行かないので外す">×</button></li>`).join("")}</ul>`:""}).join(""):`<p class="favempty">ステージやブース内イベントの☆を押すと、時刻順に並びます。お気に入りにしたブースの時刻イベントも自動で入ります。</p>`;
-  if(sched.length)$("#fav-sched").insertAdjacentHTML("afterbegin",`<p class="favnote">行かない予定は右の×で外せます。</p>`);
+  $("#fav-sched").innerHTML=sched.length?Object.keys(days).map(d=>{const r=sched.filter(x=>x.day===d);return r.length?`<div class="dayh">${days[d]}</div><ul class="favlist">${r.map(x=>`<li><span class="g">${x.t}</span><a class="go" href="#${x.kind==="s"?"stage":"events"}" data-goto="${x.kind}" data-key="${esc(x.kind==="s"?x.day+"|"+x.stage+"|"+x.t:x.day+"|"+x.where+"|"+x.t)}"><b>${esc(x.txt)}${x.auto?'<span class="auto">お気に入りブース</span>':""}</b><small>${esc(x.where)}${x.note?"・"+esc(x.note):""}</small></a><button class="fav sm" data-rm="${esc(x.id)}" data-label="${esc(x.txt)}" aria-pressed="true" aria-label="${esc(x.txt)}を予定から外す" title="予定から外す">${STAR}</button></li>`).join("")}</ul>`:""}).join(""):`<p class="favempty">ステージやブース内イベントの☆を押すと、時刻順に並びます。お気に入りにしたブースの時刻イベントも自動で入ります。</p>`;
+  if(sched.length)$("#fav-sched").insertAdjacentHTML("afterbegin",`<p class="favnote">行かない予定は☆をタップすると外れます。</p>`);
   if(hidden)$("#fav-sched").insertAdjacentHTML("beforeend",`<p class="favnote">外した予定が${hidden}件あります。<button class="unhide" data-unhide="1">元に戻す</button></p>`);
   $("#favbar").innerHTML=n?`<button class="btn" id="fav-copy" data-favcopy="1">リストをコピー</button>${clearArm?`<span class="favnote">本当にすべて外しますか？</span><button class="btn warn" id="fav-clear-yes" data-favclear="yes">すべて外す</button><button class="btn ghost" id="fav-clear-no" data-favclear="no">やめる</button>`:`<button class="btn ghost" id="fav-clear" data-favclear="ask">すべて外す</button>`}<span class="favnote" id="fav-msg" role="status"></span>`:"";
 }
@@ -1035,16 +1039,21 @@ function favText(){
   ["26","27"].forEach(d=>{const r=sched.filter(x=>x.day===d);if(r.length){L.push(d==="26"?"■ 9/26（土）":"■ 9/27（日）");r.forEach(x=>L.push(`${x.t} ${x.where} ${x.txt}${x.note?"（"+x.note+"）":""}`));L.push("")}});
   return L.join("\n");
 }
+let undoFn=null,toastT=0;
+function toast(msg,fn){undoFn=fn;$("#toast-msg").textContent=msg;$("#toast").hidden=false;clearTimeout(toastT);toastT=setTimeout(hideToast,5000)}
+function hideToast(){undoFn=null;$("#toast").hidden=true;clearTimeout(toastT)}
 function syncFav(id){const on=FAV.has(id);
   document.querySelectorAll(`[data-fav="${CSS.escape(id)}"]`).forEach(x=>{x.setAttribute("aria-pressed",on);x.title=on?"お気に入りから外す":"お気に入りに追加";x.setAttribute("aria-label",x.getAttribute("aria-label").replace(/を(お気に入りに追加|お気に入りから外す)$/,on?"をお気に入りから外す":"をお気に入りに追加"))});}
 document.addEventListener("click",async e=>{
   const fb=e.target.closest("[data-fav]");
-  if(fb){const id=fb.dataset.fav;if(FAV.has(id))FAV.delete(id);else{FAV.add(id);HIDE.delete(id)}saveFav();
+  if(fb){const id=fb.dataset.fav;const inList=fb.closest("#favs");if(FAV.has(id)){FAV.delete(id);if(inList){toast("お気に入りから外しました",()=>{FAV.add(id)})}}else{FAV.add(id);HIDE.delete(id)}saveFav();
     syncFav(id);
     if(state.feat.has("fav"))render();
     renderFav();return}
   const rm=e.target.closest("[data-rm]");
-  if(rm){const id=rm.dataset.rm;FAV.delete(id);HIDE.add(id);saveFav();syncFav(id);renderFav();return}
+  if(rm){const id=rm.dataset.rm,wasFav=FAV.has(id),wasHide=HIDE.has(id);FAV.delete(id);HIDE.add(id);saveFav();syncFav(id);renderFav();
+    toast("予定から外しました",()=>{if(wasFav)FAV.add(id);if(!wasHide)HIDE.delete(id)});return}
+  if(e.target.closest("[data-undo]")){const f=undoFn;hideToast();if(f){f();saveFav();document.querySelectorAll("[data-fav]").forEach(x=>syncFav(x.dataset.fav));if(state.feat.has("fav"))render();renderFav()}return}
   if(e.target.closest("[data-unhide]")){HIDE.clear();saveFav();renderFav();return}
   const fc=e.target.closest("[data-favclear]");
   if(fc){const v=fc.dataset.favclear;if(v==="ask")clearArm=true;else{if(v==="yes"){FAV.clear();HIDE.clear();saveFav();render();stage(document.querySelector(".tab[data-day][aria-selected=true]")?.dataset.day||"26");events(curDay)}clearArm=false}renderFav();return}
